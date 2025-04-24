@@ -2,6 +2,8 @@
 
 Bienvenue sur le dépôt de mon **portfolio personnel**. Ce projet met en avant mes compétences en développement web, mes réalisations et ma passion pour la technologie.
 
+**Portfolio en ligne** : [https://sam-toafode.wuaze.com](https://sam-toafode.wuaze.com)
+
 ## 🔍 Aperçu
 
 Ce portfolio présente :
@@ -18,8 +20,6 @@ Ce portfolio présente :
 - **PHP**
 - **Bootstrap**
 - **Tailwind CSS**
-
-
 
 ## 🧰 Installation locale
 
