@@ -1,153 +1,384 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Services - Sam TOAFODE</title>
+    <meta
+      name="description"
+      content="Découvrez les services offerts par Sam TOAFODE, un développeur Front-End et Python passionné par les interfaces modernes et interactives. Explorez mes compétences et mes offres de services en développement web."
+    />
+    <meta
+      name="keywords"
+      content="services, développement web, interfaces modernes, compétences techniques, Sam TOAFODE"
+    />
+    <meta name="author" content="Sam TOAFODE" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Services-Sam TOAFODE </title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+    <!-- Balise canonique pour éviter le contenu dupliqué -->
+    <link rel="canonical" href="https://sam-toafode.wuaze.com/services.html" />
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon-32x32.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Favicons -->
+    <link href="assets/img/favicon-32x32.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="Codo Toafode Sam Loik Bidossessi - Portfolio" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://sam-toafode.wuaze.com/" />
-  <meta property="og:image" content="assets/img/portfolio/personal1.png" />
-  <meta property="og:description" content="Développeur Front-End & Python Junior passionné par les interfaces modernes et interactives. Découvrez mes projets et compétences !" />
-  <meta property="og:site_name" content="Portfolio de Codo Toafode Sam Loik Bidossessi" />
-  <meta property="og:locale" content="fr_FR" />
+    <!-- Favicon pour différents appareils -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
 
-  <!-- Twitter Card Meta Tags (pour X / Twitter) -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Codo Toafode Sam Loik Bidossessi - Portfolio" />
-  <meta name="twitter:description" content="Développeur Front-End & Python Junior passionné par les interfaces modernes et interactives. Découvrez mes projets et compétences !" />
-  <meta name="twitter:image" content="assets/img/portfolio/personal1.png" />
-  <meta name="twitter:site" content="https://x.com/samToafode?t=im6pTVRE_JLntFuyZZ8dMA&s=09" />
+    <!-- Open Graph Meta Tags - Optimisés -->
+    <meta property="og:title" content="Services - Sam TOAFODE" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://sam-toafode.wuaze.com/services.html"
+    />
+    <meta
+      property="og:image"
+      content="https://sam-toafode.wuaze.com/assets/img/portfolio/personal1.png"
+    />
+    <meta property="og:image:alt" content="Services - Sam TOAFODE" />
+    <meta
+      property="og:description"
+      content="Découvrez les services offerts par Sam TOAFODE, un développeur Front-End et Python passionné par les interfaces modernes et interactives. Explorez mes compétences et mes offres de services en développement web."
+    />
+    <meta property="og:site_name" content="Portfolio de Sam TOAFODE" />
+    <meta property="og:locale" content="fr_FR" />
 
-  <!-- Meta Robots (facultatif, pour le SEO) -->
-  <meta name="robots" content="index, follow" />
+    <!-- Twitter Card Meta Tags - Optimisés -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Services - Sam TOAFODE" />
+    <meta
+      name="twitter:description"
+      content="Découvrez les services offerts par Sam TOAFODE, un développeur Front-End et Python passionné par les interfaces modernes et interactives. Explorez mes compétences et mes offres de services en développement web."
+    />
+    <meta
+      name="twitter:image"
+      content="https://sam-toafode.wuaze.com/assets/img/portfolio/personal1.png"
+    />
+    <meta name="twitter:image:alt" content="Services - Sam TOAFODE" />
+    <meta name="twitter:site" content="@samToafode" />
+    <meta name="twitter:creator" content="@samToafode" />
 
+    <!-- Meta Robots -->
+    <meta
+      name="robots"
+      content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Structured Data / Schema.org pour les moteurs de recherche -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Services de Développement Web",
+        "url": "https://sam-toafode.wuaze.com/services.html",
+        "image": "https://sam-toafode.wuaze.com/assets/img/portfolio/personal1.png",
+        "description": "Découvrez les services offerts par Sam TOAFODE, un développeur Front-End et Python passionné par les interfaces modernes et interactives. Explorez mes compétences et mes offres de services en développement web.",
+        "provider": {
+          "@type": "Person",
+          "name": "Sam TOAFODE"
+        }
+      }
+    </script>
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <!-- Préchargement des ressources critiques pour améliorer les performances -->
+    <link
+      rel="preload"
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      as="style"
+    />
+    <link rel="preload" href="assets/css/main.css" as="style" />
+    <link
+      rel="preload"
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      as="style"
+    />
+    <link rel="preload" href="assets/js/main.js" as="script" />
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-</head>
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
 
-<body class="services-page">
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+    <style>
+      .service-item {
+        background: #f8f9fa;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
 
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/logo.png" alt=""> 
-        <h1 class="sitename">Personal</h1>
-      </a>
+      .service-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="services.html" class="active">Services</a></li>
-          <li><a href="portfolio.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
+      .icon {
+        font-size: 2.5rem;
+        color: #007bff;
+        margin-bottom: 15px;
+      }
 
-    </div>
-  </header>
+      .service-item h3 {
+        color: #343a40;
+        margin-bottom: 15px;
+      }
 
+      .service-item p {
+        color: #6c757d;
+      }
+    </style>
+  </head>
 
-  <main class="main">
+  <body class="services-page">
+    <header id="header" class="header d-flex align-items-center fixed-top">
+      <div
+        class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
+      >
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <img src="assets/img/logo.png" alt="Logo Sam TOAFODE" />
+          <h1 class="sitename">Personal</h1>
+        </a>
 
-    <!-- Page Title -->
-    <div class="page-title" data-aos="fade">
-      <div class="heading">
-        <div class="container">
-          <div class="row d-flex justify-content-center text-center">
-            <div class="col-lg-8">
-              <h1>Aucun service disponible pour le moment</h1>
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">À Propos</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="services.html" class="active">Services</a></li>
+            <li><a href="portfolio.html">Projets</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- Page Title -->
+      <div class="page-title" data-aos="fade">
+        <div class="heading">
+          <div class="container">
+            <div class="row d-flex justify-content-center text-center">
+              <div class="col-lg-8">
+                <h1>Services</h1>
+              </div>
             </div>
           </div>
         </div>
+        <nav class="breadcrumbs">
+          <div class="container">
+            <ol>
+              <li><a href="index.html">Accueil</a></li>
+              <li class="current">Services</li>
+            </ol>
+          </div>
+        </nav>
       </div>
-      <nav class="breadcrumbs">
+      <!-- End Page Title -->
+
+      <!-- Services Section -->
+      <section id="services" class="services section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Services</h2>
+          <p>Découvrez les services que je propose</p>
+        </div>
+        <!-- End Section Title -->
+
         <div class="container">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Services</li>
-          </ol>
+          <div class="row gy-4">
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="service-item">
+                <div class="icon"><i class="bi bi-code-slash"></i></div>
+                <h3>Création de sites web responsive (Front-End)</h3>
+                <p>
+                  Technologies : HTML, CSS, JavaScript, Bootstrap, Tailwind CSS,
+                  React.js. Pour : portfolios, landing pages, blogs, sites
+                  vitrines.
+                </p>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="service-item">
+                <div class="icon">
+                  <i class="bi bi-layout-text-window-reverse"></i>
+                </div>
+                <h3>Intégration de designs (Figma/XD) en code</h3>
+                <p>
+                  Conversion de maquettes UI/UX en pages web fidèles et
+                  fonctionnelles.
+                </p>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="service-item">
+                <div class="icon"><i class="bi bi-server"></i></div>
+                <h3>Automatisations simples en Python</h3>
+                <p>
+                  Scripts de traitement de données, automatisation de tâches
+                  répétitives, scraping, etc. Utilisation de bibliothèques comme
+                  pandas, requests, beautifulsoup, ou eel pour l'interface.
+                </p>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="service-item">
+                <div class="icon"><i class="bi bi-gear"></i></div>
+                <h3>Création ou mise à jour de portfolios</h3>
+                <p>
+                  Création de sites simples et modernes pour se présenter,
+                  idéaux pour les freelances ou entrepreneurs.
+                </p>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              <div class="service-item">
+                <div class="icon"><i class="bi bi-git"></i></div>
+                <h3>Gestion des versions avec Git</h3>
+                <p>
+                  Gestion de versions et collaboration sur des projets avec Git
+                  pour un suivi efficace des modifications.
+                </p>
+              </div>
+            </div>
+            <!-- End Service Item -->
+          </div>
         </div>
-      </nav>
-    </div><!-- End Page Title -->
+      </section>
+      <!-- /Services Section -->
+    </main>
 
-    
-
-  </main>
-
-  
-
-  <footer id="footer" class="footer dark-background">
-    <div class="container">
-      <h3 class="sitename">Personal</h3>
-      <p style="font-size: 17px;"> Transformons les idées en réalité, une ligne de code à la fois. 💡💻</p>
-      <div class="social-links d-flex justify-content-center">
-        <a href="https://x.com/samToafode?t=im6pTVRE_JLntFuyZZ8dMA&s=09"><i class="bi bi-twitter-x"></i></a>
-          <a href="https://www.facebook.com/profile.php?id=100083383636319"><i class="bi bi-facebook"></i></a>
-          <a href="https://www.instagram.com/daltonn.sam/profilecard/?igsh=d2dwenl1cThxZ2R6"><i class="bi bi-instagram"></i></a>
-          <a href="https://www.linkedin.com/in/samloikcodotoafode"><i class="bi bi-linkedin"></i></a>
-          <a href="https://www.github.com/Sam-coder470"><i class="bi bi-github"></i></a>
-      </div>
+    <footer id="footer" class="footer dark-background">
       <div class="container">
-        <div class="copyright">
-          <span>Copyright</span> <strong class="px-1 sitename">Personal</strong> <span>All Rights Reserved</span>
+        <h3 class="sitename">Sam TOAFODE</h3>
+        <p style="font-size: 17px">
+          Transformons les idées en réalité, une ligne de code à la fois. 💡💻
+        </p>
+        <div class="social-links d-flex justify-content-center">
+          <a
+            href="https://x.com/samToafode?t=im6pTVRE_JLntFuyZZ8dMA&s=09"
+            aria-label="X (Twitter)"
+            ><i class="bi bi-twitter-x"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/profile.php?id=100083383636319"
+            aria-label="Facebook"
+            ><i class="bi bi-facebook"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/daltonn.sam/profilecard/?igsh=d2dwenl1cThxZ2R6"
+            aria-label="Instagram"
+            ><i class="bi bi-instagram"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/samloikcodotoafode"
+            aria-label="LinkedIn"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+          <a href="https://www.github.com/Sam-coder470" aria-label="GitHub"
+            ><i class="bi bi-github"></i
+          ></a>
         </div>
-        <div class="credits">
-          Designed by <a href="https://www.github.com/Sam-coder470">Sam TOAFODE</a>
+        <div class="container">
+          <div class="copyright">
+            <span>Copyright &copy; 2025</span>
+            <strong class="px-1 sitename">Sam TOAFODE</strong>
+            <span>Tous droits réservés</span>
+          </div>
+          <div class="credits">
+            Conçu par
+            <a href="https://www.github.com/Sam-coder470">Sam TOAFODE</a>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      aria-label="Retour en haut"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
+    <!-- Preloader -->
+    <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>

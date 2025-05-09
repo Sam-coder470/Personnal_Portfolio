@@ -1,234 +1,449 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Projets - Sam TOAFODE</title>
+    <meta
+      name="description"
+      content="Découvrez les projets de Sam TOAFODE, un développeur Front-End et Python passionné par les interfaces modernes et interactives. Explorez mes réalisations et compétences en développement web."
+    />
+    <meta
+      name="keywords"
+      content="projets, développement web, interfaces modernes, compétences techniques, Sam TOAFODE"
+    />
+    <meta name="author" content="Sam TOAFODE" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title> Projects-Sam TOAFODE </title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+    <!-- Balise canonique pour éviter le contenu dupliqué -->
+    <link rel="canonical" href="https://sam-toafode.wuaze.com/portfolio.html" />
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon-32x32.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Favicons -->
+    <link href="assets/img/favicon-32x32.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="Codo Toafode Sam Loik Bidossessi - Portfolio" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://sam-toafode.wuaze.com/" />
-  <meta property="og:image" content="assets/img/portfolio/personal1.png" />
-  <meta property="og:description" content="Développeur Front-End & Python Junior passionné par les interfaces modernes et interactives. Découvrez mes projets et compétences !" />
-  <meta property="og:site_name" content="Portfolio de Codo Toafode Sam Loik Bidossessi" />
-  <meta property="og:locale" content="fr_FR" />
+    <!-- Favicon pour différents appareils -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
 
-  <!-- Twitter Card Meta Tags (pour X / Twitter) -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Codo Toafode Sam Loik Bidossessi - Portfolio" />
-  <meta name="twitter:description" content="Développeur Front-End & Python Junior passionné par les interfaces modernes et interactives. Découvrez mes projets et compétences !" />
-  <meta name="twitter:image" content="assets/img/portfolio/personal1.png" />
-  <meta name="twitter:site" content="https://x.com/samToafode?t=im6pTVRE_JLntFuyZZ8dMA&s=09" />
+    <!-- Open Graph Meta Tags - Optimisés -->
+    <meta property="og:title" content="Projets - Sam TOAFODE" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://sam-toafode.wuaze.com/portfolio.html"
+    />
+    <meta
+      property="og:image"
+      content="https://sam-toafode.wuaze.com/assets/img/portfolio/personal1.png"
+    />
+    <meta property="og:image:alt" content="Projets - Sam TOAFODE" />
+    <meta
+      property="og:description"
+      content="Découvrez les projets de Sam TOAFODE, un développeur Front-End et Python passionné par les interfaces modernes et interactives. Explorez mes réalisations et compétences en développement web."
+    />
+    <meta property="og:site_name" content="Portfolio de Sam TOAFODE" />
+    <meta property="og:locale" content="fr_FR" />
 
-  <!-- Meta Robots (facultatif, pour le SEO) -->
-  <meta name="robots" content="index, follow" />
+    <!-- Twitter Card Meta Tags - Optimisés -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Projets - Sam TOAFODE" />
+    <meta
+      name="twitter:description"
+      content="Découvrez les projets de Sam TOAFODE, un développeur Front-End et Python passionné par les interfaces modernes et interactives. Explorez mes réalisations et compétences en développement web."
+    />
+    <meta
+      name="twitter:image"
+      content="https://sam-toafode.wuaze.com/assets/img/portfolio/personal1.png"
+    />
+    <meta name="twitter:image:alt" content="Projets - Sam TOAFODE" />
+    <meta name="twitter:site" content="@samToafode" />
+    <meta name="twitter:creator" content="@samToafode" />
 
+    <!-- Meta Robots -->
+    <meta
+      name="robots"
+      content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Structured Data / Schema.org pour les moteurs de recherche -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Projets",
+        "url": "https://sam-toafode.wuaze.com/portfolio.html",
+        "image": "https://sam-toafode.wuaze.com/assets/img/portfolio/personal1.png",
+        "description": "Découvrez les projets de Sam TOAFODE, un développeur Front-End et Python passionné par les interfaces modernes et interactives. Explorez mes réalisations et compétences en développement web.",
+        "author": {
+          "@type": "Person",
+          "name": "Sam TOAFODE"
+        }
+      }
+    </script>
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <!-- Préchargement des ressources critiques pour améliorer les performances -->
+    <link
+      rel="preload"
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      as="style"
+    />
+    <link rel="preload" href="assets/css/main.css" as="style" />
+    <link
+      rel="preload"
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      as="style"
+    />
+    <link rel="preload" href="assets/js/main.js" as="script" />
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-</head>
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
 
-<body class="portfolio-page">
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+  </head>
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+  <body class="portfolio-page">
+    <header id="header" class="header d-flex align-items-center fixed-top">
+      <div
+        class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
+      >
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <img src="assets/img/logo.png" alt="Logo Sam TOAFODE" />
+          <h1 class="sitename">Personal</h1>
+        </a>
 
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/logo.png" alt="">
-        <h1 class="sitename">Personal</h1>
-      </a>
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">À Propos</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html" class="active">Projets</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
+    </header>
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html" class="active">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-    </div>
-  </header>
-
-  <main class="main">
-
-    <!-- Page Title -->
-    <div class="page-title" data-aos="fade">
-      <div class="heading">
-        <div class="container">
-          <div class="row d-flex justify-content-center text-center">
-            <div class="col-lg-8">
-              <h1>Projects</h1>
+    <main class="main">
+      <!-- Page Title -->
+      <div class="page-title" data-aos="fade">
+        <div class="heading">
+          <div class="container">
+            <div class="row d-flex justify-content-center text-center">
+              <div class="col-lg-8">
+                <h1>Projets</h1>
+              </div>
             </div>
           </div>
         </div>
+        <nav class="breadcrumbs">
+          <div class="container">
+            <ol>
+              <li><a href="index.html">Accueil</a></li>
+              <li class="current">Projets</li>
+            </ol>
+          </div>
+        </nav>
       </div>
-      <nav class="breadcrumbs">
+      <!-- End Page Title -->
+
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="portfolio section">
         <div class="container">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Projects</li>
-          </ol>
-        </div>
-      </nav>
-    </div><!-- End Page Title -->
+          <div
+            class="isotope-layout"
+            data-default-filter="*"
+            data-layout="masonry"
+            data-sort="original-order"
+          >
+            <ul
+              class="portfolio-filters isotope-filters"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <li data-filter="*" class="filter-active">Tous</li>
+              <li data-filter=".filter-product">Site Web</li>
+              <li data-filter=".filter-branding">Projets Python</li>
+            </ul>
+            <!-- End Portfolio Filters -->
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
-
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-product">Website</li>
-            <li data-filter=".filter-branding">Python Projects</li>
-          </ul><!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/restaurant1.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>McDaltonn's</h4>
-                  <p>Création d'un site web interactif pour la gestion efficace d'un restaurant</p>
-                  <a href="assets/img/portfolio/restaurant1.png" title="McDaltonn's" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            <div
+              class="row gy-4 isotope-container"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/restaurant1.png"
+                    class="img-fluid"
+                    alt="McDaltonn's"
+                  />
+                  <div class="portfolio-info">
+                    <h4>McDaltonn's</h4>
+                    <p>
+                      Création d'un site web interactif pour la gestion efficace
+                      d'un restaurant
+                    </p>
+                    <a
+                      href="assets/img/portfolio/restaurant1.png"
+                      title="McDaltonn's"
+                      data-gallery="portfolio-gallery-product"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="portfolio-details.html"
+                      title="Plus de Détails"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+              <!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/startravaux1.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>StarTravaux.Ma</h4>
-                  <p>Développement du site web pour StarTravaux.ma pendant mon stage.</p>
-                  <a href="assets/img/portfolio/startravaux1.png" title="StarTravaux.Ma" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details(2).html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/startravaux1.png"
+                    class="img-fluid"
+                    alt="StarTravaux.Ma"
+                  />
+                  <div class="portfolio-info">
+                    <h4>StarTravaux.Ma</h4>
+                    <p>
+                      Développement du site web pour StarTravaux.ma pendant mon
+                      stage.
+                    </p>
+                    <a
+                      href="assets/img/portfolio/startravaux1.png"
+                      title="StarTravaux.Ma"
+                      data-gallery="portfolio-gallery-product"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="portfolio-details(2).html"
+                      title="Plus de Détails"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+              <!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/NEMOS1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Developpement de N.E.M.O.S</h4>
-                  <p>Developpement de N.E.M.O.S, un assistant vocal et chatbot intelligent</p>
-                  <a href="assets/img/portfolio/NEMOS1.jpg" title="N.E.M.O.S" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details(4).html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/NEMOS1.jpg"
+                    class="img-fluid"
+                    alt="N.E.M.O.S"
+                  />
+                  <div class="portfolio-info">
+                    <h4>Développement de N.E.M.O.S</h4>
+                    <p>
+                      Développement de N.E.M.O.S, un assistant vocal et chatbot
+                      intelligent
+                    </p>
+                    <a
+                      href="assets/img/portfolio/NEMOS1.jpg"
+                      title="N.E.M.O.S"
+                      data-gallery="portfolio-gallery-branding"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="portfolio-details(4).html"
+                      title="Plus de Détails"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
                 </div>
               </div>
-            </div><!-- End Portfolio Item ajouter le portfolio-details(4) au niveau du # -->
+              <!-- End Portfolio Item -->
 
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/personal1.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Personal Portfolio</h4>
-                  <p>Création d'un portfolio personnel pour présenter mes projets et mes compétences.</p>
-                  <a href="assets/img/portfolio/personal1.png" title="Personal Portfolio" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details(3).html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/personal1.png"
+                    class="img-fluid"
+                    alt="Portfolio Personnel"
+                  />
+                  <div class="portfolio-info">
+                    <h4>Portfolio Personnel</h4>
+                    <p>
+                      Création d'un portfolio personnel pour présenter mes
+                      projets et mes compétences.
+                    </p>
+                    <a
+                      href="assets/img/portfolio/personal1.png"
+                      title="Portfolio Personnel"
+                      data-gallery="portfolio-gallery-product"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="portfolio-details(3).html"
+                      title="Plus de Détails"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
                 </div>
               </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/awoye1.png"
+                    class="img-fluid"
+                    alt="Portfolio | Trésor AWOYE"
+                  />
+                  <div class="portfolio-info">
+                    <h4>Portfolio | Trésor AWOYE</h4>
+                    <p>
+                      Portfolio de Trésor Awoye – Développeur Web et Réseaux.
+                    </p>
+                    <a
+                      href="assets/img/portfolio/awoye1.png"
+                      title="Portfolio | Trésor AWOYE"
+                      data-gallery="portfolio-gallery-product"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="portfolio-details(5).html"
+                      title="Plus de Détails"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
             </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/awoye1.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Portfolio | Tresor AWOYE</h4>
-                  <p>Portfolio de Trésor Awoye – Développeur Web et Réseaux.</p>
-                  <a href="assets/img/portfolio/awoye1.png" title="Personal Portfolio" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details(5).html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-
-          </div><!-- End Portfolio Container -->
-
+            <!-- End Portfolio Container -->
+          </div>
         </div>
+      </section>
+      <!-- /Portfolio Section -->
+    </main>
 
-      </div>
-
-    </section><!-- /Portfolio Section -->
-
-  </main>
-
-  <footer id="footer" class="footer dark-background">
-    <div class="container">
-      <h3 class="sitename">Personal</h3>
-      <p style="font-size: 17px;"> Transformons les idées en réalité, une ligne de code à la fois. 💡💻</p>
-      <div class="social-links d-flex justify-content-center">
-        <a href="https://x.com/samToafode?t=im6pTVRE_JLntFuyZZ8dMA&s=09"><i class="bi bi-twitter-x"></i></a>
-          <a href="https://www.facebook.com/profile.php?id=100083383636319"><i class="bi bi-facebook"></i></a>
-          <a href="https://www.instagram.com/daltonn.sam/profilecard/?igsh=d2dwenl1cThxZ2R6"><i class="bi bi-instagram"></i></a>
-          <a href="https://www.linkedin.com/in/samloikcodotoafode"><i class="bi bi-linkedin"></i></a>
-          <a href="https://www.github.com/Sam-coder470"><i class="bi bi-github"></i></a>
-      </div>
+    <footer id="footer" class="footer dark-background">
       <div class="container">
-        <div class="copyright">
-          <span>Copyright</span> <strong class="px-1 sitename">Personal</strong> <span>All Rights Reserved</span>
+        <h3 class="sitename">Sam TOAFODE</h3>
+        <p style="font-size: 17px">
+          Transformons les idées en réalité, une ligne de code à la fois. 💡💻
+        </p>
+        <div class="social-links d-flex justify-content-center">
+          <a
+            href="https://x.com/samToafode?t=im6pTVRE_JLntFuyZZ8dMA&s=09"
+            aria-label="X (Twitter)"
+            ><i class="bi bi-twitter-x"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/profile.php?id=100083383636319"
+            aria-label="Facebook"
+            ><i class="bi bi-facebook"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/daltonn.sam/profilecard/?igsh=d2dwenl1cThxZ2R6"
+            aria-label="Instagram"
+            ><i class="bi bi-instagram"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/samloikcodotoafode"
+            aria-label="LinkedIn"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+          <a href="https://www.github.com/Sam-coder470" aria-label="GitHub"
+            ><i class="bi bi-github"></i
+          ></a>
         </div>
-        <div class="credits">
-          Designed by <a href="https://www.github.com/Sam-coder470">Sam TOAFODE</a>
+        <div class="container">
+          <div class="copyright">
+            <span>Copyright &copy; 2025</span>
+            <strong class="px-1 sitename">Sam TOAFODE</strong>
+            <span>Tous droits réservés</span>
+          </div>
+          <div class="credits">
+            Conçu par
+            <a href="https://www.github.com/Sam-coder470">Sam TOAFODE</a>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      aria-label="Retour en haut"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
+    <!-- Preloader -->
+    <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>

@@ -1,85 +1,75 @@
 /**
-* PHP Email Form Validation - v3.10
-* URL: https://bootstrapmade.com/php-email-form/
-* Author: BootstrapMade.com
-*/
+ * Form validation and submission handling
+ * Version compatible avec FormSubmit
+ */
+
 (function () {
   "use strict";
 
-  let forms = document.querySelectorAll('.php-email-form');
+  let forms = document.querySelectorAll(".php-email-form");
 
-  forms.forEach( function(e) {
-    e.addEventListener('submit', function(event) {
-      event.preventDefault();
+  forms.forEach(function (form) {
+    form.addEventListener("submit", function (event) {
+      // Ne pas intercepter la soumission - laisser FormSubmit gérer cela
 
-      let thisForm = this;
+      // Afficher le message de chargement
+      this.querySelector(".loading").classList.add("d-block");
 
-      let action = thisForm.getAttribute('action');
-      let recaptcha = thisForm.getAttribute('data-recaptcha-site-key');
-      
-      if( ! action ) {
-        displayError(thisForm, 'The form action property is not set!');
-        return;
-      }
-      thisForm.querySelector('.loading').classList.add('d-block');
-      thisForm.querySelector('.error-message').classList.remove('d-block');
-      thisForm.querySelector('.sent-message').classList.remove('d-block');
+      // Masquer les messages d'erreur et de succès
+      this.querySelector(".error-message").classList.remove("d-block");
+      this.querySelector(".sent-message").classList.remove("d-block");
 
-      let formData = new FormData( thisForm );
+      // Effectuer une validation basique côté client
+      const isValid = validateForm(this);
 
-      if ( recaptcha ) {
-        if(typeof grecaptcha !== "undefined" ) {
-          grecaptcha.ready(function() {
-            try {
-              grecaptcha.execute(recaptcha, {action: 'php_email_form_submit'})
-              .then(token => {
-                formData.set('recaptcha-response', token);
-                php_email_form_submit(thisForm, action, formData);
-              })
-            } catch(error) {
-              displayError(thisForm, error);
-            }
-          });
-        } else {
-          displayError(thisForm, 'The reCaptcha javascript API url is not loaded!')
-        }
-      } else {
-        php_email_form_submit(thisForm, action, formData);
+      if (!isValid) {
+        event.preventDefault(); // Empêcher la soumission si le formulaire n'est pas valide
+        this.querySelector(".loading").classList.remove("d-block");
       }
     });
   });
 
-  function php_email_form_submit(thisForm, action, formData) {
-    fetch(action, {
-      method: 'POST',
-      body: formData,
-      headers: {'X-Requested-With': 'XMLHttpRequest'}
-    })
-    .then(response => {
-      if( response.ok ) {
-        return response.text();
-      } else {
-        throw new Error(`${response.status} ${response.statusText} ${response.url}`); 
-      }
-    })
-    .then(data => {
-      thisForm.querySelector('.loading').classList.remove('d-block');
-      if (data.trim() == 'OK') {
-        thisForm.querySelector('.sent-message').classList.add('d-block');
-        thisForm.reset(); 
-      } else {
-        throw new Error(data ? data : 'Form submission failed and no error message returned from: ' + action); 
-      }
-    })
-    .catch((error) => {
-      displayError(thisForm, error);
-    });
+  function validateForm(form) {
+    // Récupérer les champs du formulaire
+    const nameField = form.querySelector('input[name="name"]');
+    const emailField = form.querySelector('input[name="email"]');
+    const subjectField = form.querySelector('input[name="subject"]');
+    const messageField = form.querySelector('textarea[name="message"]');
+
+    // Vérifier si les champs obligatoires sont remplis
+    if (!nameField.value.trim()) {
+      displayError(form, "Veuillez entrer votre nom.");
+      return false;
+    }
+
+    if (!emailField.value.trim()) {
+      displayError(form, "Veuillez entrer votre adresse email.");
+      return false;
+    }
+
+    // Validation simple du format email
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(emailField.value.trim())) {
+      displayError(form, "Veuillez entrer une adresse email valide.");
+      return false;
+    }
+
+    if (!subjectField.value.trim()) {
+      displayError(form, "Veuillez entrer un sujet.");
+      return false;
+    }
+
+    if (!messageField.value.trim()) {
+      displayError(form, "Veuillez entrer votre message.");
+      return false;
+    }
+
+    return true;
   }
 
-  function displayError(thisForm, error) {
-    thisForm.querySelector('.loading').classList.remove('d-block');
-    thisForm.querySelector('.error-message').innerHTML = error;
-    thisForm.querySelector('.error-message').classList.add('d-block');
+  function displayError(form, error) {
+    form.querySelector(".loading").classList.remove("d-block");
+    form.querySelector(".error-message").innerHTML = error;
+    form.querySelector(".error-message").classList.add("d-block");
   }
-
 })();
