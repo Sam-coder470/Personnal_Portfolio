@@ -1,278 +1,436 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Contact - Sam TOAFODE</title>
+    <meta
+      name="description"
+      content="Contactez Sam TOAFODE, un développeur Front-End et Python passionné par les interfaces modernes et interactives. Découvrez comment me joindre pour discuter de vos projets et collaborations."
+    />
+    <meta
+      name="keywords"
+      content="contact, développeur, collaboration, projets, Sam TOAFODE"
+    />
+    <meta name="author" content="Sam TOAFODE" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Contact - Sam TOAFODE</title>
-  <meta name="description" content="Contactez Sam TOAFODE, un développeur Front-End et Python passionné par les interfaces modernes et interactives. Découvrez comment me joindre pour discuter de vos projets et collaborations.">
-  <meta name="keywords" content="contact, développeur, collaboration, projets, Sam TOAFODE">
-  <meta name="author" content="Sam TOAFODE">
+    <!-- Balise canonique pour éviter le contenu dupliqué -->
+    <link rel="canonical" href="https://sam-toafode.wuaze.com/contact.html" />
 
-  <!-- Balise canonique pour éviter le contenu dupliqué -->
-  <link rel="canonical" href="https://sam-toafode.wuaze.com/contact.html" />
+    <!-- Favicons -->
+    <link href="assets/img/favicon-32x32.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon-32x32.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Favicon pour différents appareils -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
 
-  <!-- Favicon pour différents appareils -->
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
-  <link rel="manifest" href="assets/site.webmanifest">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
+    <!-- Open Graph Meta Tags - Optimisés -->
+    <meta property="og:title" content="Contact - Sam TOAFODE" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://sam-toafode.wuaze.com/contact.html"
+    />
+    <meta
+      property="og:image"
+      content="https://sam-toafode.wuaze.com/assets/img/portfolio/personal1.png"
+    />
+    <meta property="og:image:alt" content="Contact - Sam TOAFODE" />
+    <meta
+      property="og:description"
+      content="Contactez Sam TOAFODE, un développeur Front-End et Python passionné par les interfaces modernes et interactives. Découvrez comment me joindre pour discuter de vos projets et collaborations."
+    />
+    <meta property="og:site_name" content="Portfolio de Sam TOAFODE" />
+    <meta property="og:locale" content="fr_FR" />
 
-  <!-- Open Graph Meta Tags - Optimisés -->
-  <meta property="og:title" content="Contact - Sam TOAFODE" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://sam-toafode.wuaze.com/contact.html" />
-  <meta property="og:image" content="https://sam-toafode.wuaze.com/assets/img/portfolio/personal1.png" />
-  <meta property="og:image:alt" content="Contact - Sam TOAFODE" />
-  <meta property="og:description" content="Contactez Sam TOAFODE, un développeur Front-End et Python passionné par les interfaces modernes et interactives. Découvrez comment me joindre pour discuter de vos projets et collaborations." />
-  <meta property="og:site_name" content="Portfolio de Sam TOAFODE" />
-  <meta property="og:locale" content="fr_FR" />
+    <!-- Twitter Card Meta Tags - Optimisés -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Contact - Sam TOAFODE" />
+    <meta
+      name="twitter:description"
+      content="Contactez Sam TOAFODE, un développeur Front-End et Python passionné par les interfaces modernes et interactives. Découvrez comment me joindre pour discuter de vos projets et collaborations."
+    />
+    <meta
+      name="twitter:image"
+      content="https://sam-toafode.wuaze.com/assets/img/portfolio/personal1.png"
+    />
+    <meta name="twitter:image:alt" content="Contact - Sam TOAFODE" />
+    <meta name="twitter:site" content="@samToafode" />
+    <meta name="twitter:creator" content="@samToafode" />
 
-  <!-- Twitter Card Meta Tags - Optimisés -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Contact - Sam TOAFODE" />
-  <meta name="twitter:description" content="Contactez Sam TOAFODE, un développeur Front-End et Python passionné par les interfaces modernes et interactives. Découvrez comment me joindre pour discuter de vos projets et collaborations." />
-  <meta name="twitter:image" content="https://sam-toafode.wuaze.com/assets/img/portfolio/personal1.png" />
-  <meta name="twitter:image:alt" content="Contact - Sam TOAFODE" />
-  <meta name="twitter:site" content="@samToafode" />
-  <meta name="twitter:creator" content="@samToafode" />
+    <!-- Meta Robots -->
+    <meta
+      name="robots"
+      content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
 
-  <!-- Meta Robots -->
-  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-
-  <!-- Structured Data / Schema.org pour les moteurs de recherche -->
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ContactPage",
-      "name": "Contact - Sam TOAFODE",
-      "url": "https://sam-toafode.wuaze.com/contact.html",
-      "image": "https://sam-toafode.wuaze.com/assets/img/portfolio/personal1.png",
-      "description": "Contactez Sam TOAFODE, un développeur Front-End et Python passionné par les interfaces modernes et interactives. Découvrez comment me joindre pour discuter de vos projets et collaborations.",
-      "author": {
-        "@type": "Person",
-        "name": "Sam TOAFODE"
+    <!-- Structured Data / Schema.org pour les moteurs de recherche -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Contact - Sam TOAFODE",
+        "url": "https://sam-toafode.wuaze.com/contact.html",
+        "image": "https://sam-toafode.wuaze.com/assets/img/portfolio/personal1.png",
+        "description": "Contactez Sam TOAFODE, un développeur Front-End et Python passionné par les interfaces modernes et interactives. Découvrez comment me joindre pour discuter de vos projets et collaborations.",
+        "author": {
+          "@type": "Person",
+          "name": "Sam TOAFODE"
+        }
       }
-    }
-  </script>
+    </script>
 
-  <!-- Préchargement des ressources critiques pour améliorer les performances -->
-  <link rel="preload" href="assets/vendor/bootstrap/css/bootstrap.min.css" as="style" />
-  <link rel="preload" href="assets/css/main.css" as="style" />
-  <link rel="preload" href="assets/vendor/bootstrap-icons/bootstrap-icons.css" as="style" />
-  <link rel="preload" href="assets/js/main.js" as="script" />
+    <!-- Préchargement des ressources critiques pour améliorer les performances -->
+    <link
+      rel="preload"
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      as="style"
+    />
+    <link rel="preload" href="assets/css/main.css" as="style" />
+    <link
+      rel="preload"
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      as="style"
+    />
+    <link rel="preload" href="assets/js/main.js" as="script" />
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+  </head>
 
-</head>
+  <body class="contact-page">
+    <header id="header" class="header d-flex align-items-center fixed-top">
+      <div
+        class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
+      >
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <img src="assets/img/logo.png" alt="Logo Sam TOAFODE" />
+          <h1 class="sitename">Personal</h1>
+        </a>
 
-<body class="contact-page">
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/logo.png" alt="Logo Sam TOAFODE">
-        <h1 class="sitename">Personal</h1>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="about.html">À Propos</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Projets</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-    </div>
-  </header>
-
-  <main class="main">
-    <!-- Page Title -->
-    <div class="page-title" data-aos="fade">
-      <div class="heading">
-        <div class="container">
-          <div class="row d-flex justify-content-center text-center">
-            <div class="col-lg-8">
-              <h1>Contact</h1>
-            </div>
-          </div>
-        </div>
-      </div>
-      <nav class="breadcrumbs">
-        <div class="container">
-          <ol>
+        <nav id="navmenu" class="navmenu">
+          <ul>
             <li><a href="index.html">Accueil</a></li>
-            <li class="current">Contact</li>
-          </ol>
+            <li><a href="about.html">À Propos</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Projets</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- Page Title -->
+      <div class="page-title" data-aos="fade">
+        <div class="heading">
+          <div class="container">
+            <div class="row d-flex justify-content-center text-center">
+              <div class="col-lg-8">
+                <h1>Contact</h1>
+              </div>
+            </div>
+          </div>
         </div>
-      </nav>
-    </div><!-- End Page Title -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4">
-          <div class="col-md-6">
-            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
-              <i class="icon bi bi-geo-alt flex-shrink-0"></i>
-              <div>
-                <h3>Adresse</h3>
-                <p>IMM 36 APPT 105 Riad Anza Taddart, Agadir</p>
-              </div>
-            </div>
+        <nav class="breadcrumbs">
+          <div class="container">
+            <ol>
+              <li><a href="index.html">Accueil</a></li>
+              <li class="current">Contact</li>
+            </ol>
           </div>
-          <!-- End Info Item -->
+        </nav>
+      </div>
+      <!-- End Page Title -->
 
-          <div class="col-md-6">
-            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="300">
-              <i class="icon bi bi-telephone flex-shrink-0"></i>
-              <div>
-                <h3>Appelez-moi</h3>
-                <p>+212 724-160846</p>
-              </div>
-            </div>
-          </div>
-          <!-- End Info Item -->
-
-          <div class="col-md-6">
-            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="400">
-              <i class="icon bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h3>Email</h3>
-                <p>samloik.codotoafode.77@edu.uiz.ac.ma</p>
-              </div>
-            </div>
-          </div>
-          <!-- End Info Item -->
-
-          <div class="col-md-6">
-            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="500">
-              <i class="icon bi bi-share flex-shrink-0"></i>
-              <div>
-                <h3>Profils Sociaux</h3>
-                <div class="social-links">
-                  <a href="https://x.com/samToafode?t=im6pTVRE_JLntFuyZZ8dMA&s=09"><i class="bi bi-twitter-x"></i></a>
-                  <a href="https://www.facebook.com/profile.php?id=100083383636319"><i class="bi bi-facebook"></i></a>
-                  <a href="https://www.instagram.com/daltonn.sam/profilecard/?igsh=d2dwenl1cThxZ2R6"><i class="bi bi-instagram"></i></a>
-                  <a href="https://www.linkedin.com/in/samloikcodotoafode"><i class="bi bi-linkedin"></i></a>
-                  <a href="https://www.github.com/Sam-coder470"><i class="bi bi-github"></i></a>
+      <!-- Contact Section -->
+      <section id="contact" class="contact section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4">
+            <div class="col-md-6">
+              <div
+                class="info-item d-flex align-items-center"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <i class="icon bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Adresse</h3>
+                  <p>IMM 36 APPT 105 Riad Anza Taddart, Agadir</p>
                 </div>
               </div>
             </div>
+            <!-- End Info Item -->
+
+            <div class="col-md-6">
+              <div
+                class="info-item d-flex align-items-center"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <i class="icon bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Appelez-moi</h3>
+                  <p>+212 724-160846</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Info Item -->
+
+            <div class="col-md-6">
+              <div
+                class="info-item d-flex align-items-center"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                <i class="icon bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email</h3>
+                  <p>samloik.codotoafode.77@edu.uiz.ac.ma</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Info Item -->
+
+            <div class="col-md-6">
+              <div
+                class="info-item d-flex align-items-center"
+                data-aos="fade-up"
+                data-aos-delay="500"
+              >
+                <i class="icon bi bi-share flex-shrink-0"></i>
+                <div>
+                  <h3>Profils Sociaux</h3>
+                  <div class="social-links">
+                    <a
+                      href="https://x.com/samToafode?t=im6pTVRE_JLntFuyZZ8dMA&s=09"
+                      ><i class="bi bi-twitter-x"></i
+                    ></a>
+                    <a
+                      href="https://www.facebook.com/profile.php?id=100083383636319"
+                      ><i class="bi bi-facebook"></i
+                    ></a>
+                    <a
+                      href="https://www.instagram.com/daltonn.sam/profilecard/?igsh=d2dwenl1cThxZ2R6"
+                      ><i class="bi bi-instagram"></i
+                    ></a>
+                    <a href="https://www.linkedin.com/in/samloikcodotoafode"
+                      ><i class="bi bi-linkedin"></i
+                    ></a>
+                    <a href="https://www.github.com/Sam-coder470"
+                      ><i class="bi bi-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Info Item -->
           </div>
-          <!-- End Info Item -->
-        </div>
 
-        <form action="https://formsubmit.co/samloik.codotoafode.77@edu.uiz.ac.ma" method="POST" class="php-email-form" data-aos="fade-up" data-aos-delay="600">
-          <!-- Configurations FormSubmit -->
-          <input type="hidden" name="_subject" value="Nouveau message depuis votre portfolio" />
-          <input type="hidden" name="_template" value="table" />
-          <input type="hidden" name="_next" value="https://sam-toafode.wuaze.com/thank-you.html" />
-          <input type="hidden" name="_captcha" value="false" />
-          <!-- Ajout important: champ honeypot pour bloquer les spams -->
-          <input type="text" name="_honey" style="display: none" />
+          <form
+            action="https://formsubmit.co/samloik.codotoafode.77@edu.uiz.ac.ma"
+            method="POST"
+            class="contact-form"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <!-- Configurations FormSubmit -->
+            <input
+              type="hidden"
+              name="_subject"
+              value="Nouveau message depuis votre portfolio"
+            />
+            <input type="hidden" name="_template" value="table" />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://sam-toafode.wuaze.com/thank-you.html"
+            />
+            <input type="hidden" name="_captcha" value="false" />
+            <!-- Protection anti-spam -->
+            <input type="text" name="_honey" style="display: none" />
 
-          <div class="row gy-4">
-            <div class="col-md-6">
-              <input type="text" name="name" class="form-control" placeholder="Votre Nom" required />
-            </div>
-
-            <div class="col-md-6">
-              <input type="email" class="form-control" name="email" placeholder="Votre Email" required />
-            </div>
-
-            <div class="col-md-12">
-              <input type="text" class="form-control" name="subject" placeholder="Sujet" required />
-            </div>
-
-            <div class="col-md-12">
-              <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
-            </div>
-
-            <div class="col-md-12 text-center">
-              <div class="loading">Chargement</div>
-              <div class="error-message"></div>
-              <div class="sent-message">
-                Votre message a été envoyé. Merci!
+            <div class="row gy-4">
+              <div class="col-md-6">
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  placeholder="Your Name"
+                  required
+                />
               </div>
 
-              <button type="submit">Envoyer un message</button>
+              <div class="col-md-6">
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+
+              <div class="col-md-12">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="subject"
+                  placeholder="Subject"
+                  required
+                />
+              </div>
+
+              <div class="col-md-12">
+                <textarea
+                  class="form-control"
+                  name="message"
+                  rows="6"
+                  placeholder="Message"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="col-md-12 text-center">
+                <!-- Remarquez que nous avons supprimé les divs d'état qui dépendaient de JavaScript -->
+                <button type="submit">Envoyer un message</button>
+              </div>
             </div>
-          </div>
-        </form>
-        <!-- End Contact Form -->
-      </div>
-    </section>
-    <!-- /Contact Section -->
-  </main>
+          </form>
 
-  <footer id="footer" class="footer dark-background">
-    <div class="container">
-      <h3 class="sitename">Sam TOAFODE</h3>
-      <p style="font-size: 17px;">Transformons les idées en réalité, une ligne de code à la fois. 💡💻</p>
-      <div class="social-links d-flex justify-content-center">
-        <a href="https://x.com/samToafode?t=im6pTVRE_JLntFuyZZ8dMA&s=09" aria-label="X (Twitter)"><i class="bi bi-twitter-x"></i></a>
-        <a href="https://www.facebook.com/profile.php?id=100083383636319" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-        <a href="https://www.instagram.com/daltonn.sam/profilecard/?igsh=d2dwenl1cThxZ2R6" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/samloikcodotoafode" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-        <a href="https://www.github.com/Sam-coder470" aria-label="GitHub"><i class="bi bi-github"></i></a>
-      </div>
+          <!-- Ajoutez ce style pour préserver l'apparence -->
+          <style>
+            .contact-form {
+              background: white;
+              padding: 30px;
+              box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+              border-radius: 8px;
+            }
+
+            .contact-form button[type="submit"] {
+              background: #1a1a1b;
+              border: 0;
+              padding: 10px 30px;
+              color: #fff;
+              transition: 0.4s;
+              border-radius: 50px;
+            }
+
+            .contact-form button[type="submit"]:hover {
+              background: #333;
+            }
+          </style>
+          <!-- End Contact Form -->
+        </div>
+      </section>
+      <!-- /Contact Section -->
+    </main>
+
+    <footer id="footer" class="footer dark-background">
       <div class="container">
-        <div class="copyright">
-          <span>Copyright &copy; 2025</span>
-          <strong class="px-1 sitename">Sam TOAFODE</strong>
-          <span>Tous droits réservés</span>
+        <h3 class="sitename">Sam TOAFODE</h3>
+        <p style="font-size: 17px">
+          Transformons les idées en réalité, une ligne de code à la fois. 💡💻
+        </p>
+        <div class="social-links d-flex justify-content-center">
+          <a
+            href="https://x.com/samToafode?t=im6pTVRE_JLntFuyZZ8dMA&s=09"
+            aria-label="X (Twitter)"
+            ><i class="bi bi-twitter-x"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/profile.php?id=100083383636319"
+            aria-label="Facebook"
+            ><i class="bi bi-facebook"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/daltonn.sam/profilecard/?igsh=d2dwenl1cThxZ2R6"
+            aria-label="Instagram"
+            ><i class="bi bi-instagram"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/samloikcodotoafode"
+            aria-label="LinkedIn"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+          <a href="https://www.github.com/Sam-coder470" aria-label="GitHub"
+            ><i class="bi bi-github"></i
+          ></a>
         </div>
-        <div class="credits">
-          Conçu par <a href="https://www.github.com/Sam-coder470">Sam TOAFODE</a>
+        <div class="container">
+          <div class="copyright">
+            <span>Copyright &copy; 2025</span>
+            <strong class="px-1 sitename">Sam TOAFODE</strong>
+            <span>Tous droits réservés</span>
+          </div>
+          <div class="credits">
+            Conçu par
+            <a href="https://www.github.com/Sam-coder470">Sam TOAFODE</a>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Retour en haut"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      aria-label="Retour en haut"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
+    <!-- Preloader -->
+    <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
