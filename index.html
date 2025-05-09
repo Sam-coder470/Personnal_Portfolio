@@ -4,11 +4,12 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
       Sam TOAFODE - Développeur Front-End & Python | Portfolio Professionnel
     </title>
-    <!-- Titre optimisé -->
+
+    <!-- Description et Mots-clés -->
     <meta
       name="description"
       content="Portfolio de Sam TOAFODE, développeur front-end et Python junior basé au Maroc. Spécialisé dans les interfaces modernes et la gestion de projets web. Découvrez mes réalisations et compétences techniques."
@@ -19,14 +20,12 @@
     />
     <meta name="author" content="Sam TOAFODE" />
 
-    <!-- Balise canonical pour éviter le contenu dupliqué -->
+    <!-- Canonical URL -->
     <link rel="canonical" href="https://sam-toafode.wuaze.com/" />
 
     <!-- Favicons -->
-    <link href="assets/img/favicon-32x32.png" rel="icon" />
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
-
-    <!-- Favicon pour différents appareils -->
+    <link rel="icon" href="assets/img/favicon-32x32.png" />
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
     <link
       rel="icon"
       type="image/png"
@@ -37,7 +36,7 @@
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
 
-    <!-- Open Graph Meta Tags - Optimisés -->
+    <!-- Open Graph (Facebook, LinkedIn) -->
     <meta
       property="og:title"
       content="Sam TOAFODE - Développeur Front-End & Python | Portfolio"
@@ -48,12 +47,12 @@
       property="og:image"
       content="https://sam-toafode.wuaze.com/assets/img/portfolio/personal1.png"
     />
-    <!-- URL absolue -->
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta
       property="og:image:alt"
       content="Sam TOAFODE - Portfolio de développeur web"
     />
-    <!-- Alt text pour l'image -->
     <meta
       property="og:description"
       content="Développeur Front-End & Python Junior passionné par les interfaces modernes et interactives. Découvrez mes projets et compétences en développement web et gestion de projets!"
@@ -61,7 +60,7 @@
     <meta property="og:site_name" content="Portfolio de Sam TOAFODE" />
     <meta property="og:locale" content="fr_FR" />
 
-    <!-- Twitter Card Meta Tags - Optimisés -->
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
@@ -75,22 +74,20 @@
       name="twitter:image"
       content="https://sam-toafode.wuaze.com/assets/img/portfolio/personal1.png"
     />
-    <!-- URL absolue -->
     <meta
       name="twitter:image:alt"
       content="Photo du portfolio de Sam TOAFODE"
     />
-    <!-- Alt text pour l'image -->
     <meta name="twitter:site" content="@samToafode" />
     <meta name="twitter:creator" content="@samToafode" />
 
-    <!-- Meta Robots -->
+    <!-- Robots -->
     <meta
       name="robots"
       content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
     />
 
-    <!-- Structured Data / Schema.org pour les moteurs de recherche -->
+    <!-- Structured Data / Schema.org -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -113,7 +110,7 @@
       }
     </script>
 
-    <!-- Préchargement des ressources critiques pour améliorer les performances -->
+    <!-- Preload & Performances -->
     <link
       rel="preload"
       href="assets/vendor/bootstrap/css/bootstrap.min.css"
@@ -127,7 +124,7 @@
     />
     <link rel="preload" href="assets/js/main.js" as="script" />
 
-    <!-- Fonts -->
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
     <link
@@ -177,6 +174,7 @@
             <li><a href="services.html">Services</a></li>
             <li><a href="portfolio.html">Projets</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li><i class="bi bi-moon" id="theme-button"></i></li>
           </ul>
           <i
             class="mobile-nav-toggle d-xl-none bi bi-list"
@@ -198,7 +196,6 @@
         <div class="container" data-aos="zoom-out" data-aos-delay="100">
           <h1>Sam TOAFODE</h1>
           <p>
-            
             <span
               class="typed"
               data-typed-items="Développeur Front-End, Développeur Python Junior,Junior Project Manager"
@@ -307,5 +304,6 @@
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/theme.js"></script>
   </body>
 </html>
