@@ -8,9 +8,24 @@
   <meta name="description" content="Découvrez plus sur Sam TOAFODE, développeur Front-End et Python junior. Passionné par les interfaces modernes et interactives, explorez mes compétences et projets.">
   <meta name="keywords" content="développeur front-end, développeur Python, gestion de projet, portfolio, Maroc, développement web, interfaces modernes, React, JavaScript, HTML5, CSS3, Bootstrap">
   <meta name="author" content="Sam TOAFODE">
+  <meta name="geo.region" content="MA" />
+  <meta name="geo.placename" content="Maroc" />
+  <meta name="language" content="fr" />
+  <meta name="revisit-after" content="7 days" />
+  <meta name="rating" content="general" />
+  <meta name="distribution" content="global" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="googlebot" content="index, follow" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
   <!-- Balise canonique pour éviter le contenu dupliqué -->
   <link rel="canonical" href="https://sam-toafode.wuaze.com/about.html" />
+  <link rel="alternate" hreflang="fr" href="https://sam-toafode.wuaze.com/about.html" />
+  <link rel="alternate" hreflang="x-default" href="https://sam-toafode.wuaze.com/about.html" />
 
   <!-- Favicons -->
   <link href="assets/img/favicon-32x32.png" rel="icon">
@@ -20,7 +35,6 @@
   <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
   <link rel="manifest" href="assets/site.webmanifest">
   <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
 
   <!-- Open Graph Meta Tags - Optimisés -->
   <meta property="og:title" content="À Propos de Sam TOAFODE - Développeur Front-End & Python" />
@@ -41,28 +55,33 @@
   <meta name="twitter:site" content="@samToafode" />
   <meta name="twitter:creator" content="@samToafode" />
 
-  <!-- Meta Robots -->
-  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-
   <!-- Structured Data / Schema.org pour les moteurs de recherche -->
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Sam TOAFODE",
+      "@type": "AboutPage",
+      "name": "À propos - Sam TOAFODE",
+      "description": "Page À propos de Sam TOAFODE, développeur front-end et Python",
       "url": "https://sam-toafode.wuaze.com/about.html",
-      "image": "https://sam-toafode.wuaze.com/assets/img/portfolio/personal1.png",
-      "sameAs": [
-        "https://www.linkedin.com/in/samloikcodotoafode",
-        "https://www.github.com/Sam-coder470",
-        "https://x.com/samToafode",
-        "https://www.facebook.com/profile.php?id=100083383636319",
-        "https://www.instagram.com/daltonn.sam/profilecard/?igsh=d2dwenl1cThxZ2R6"
-      ],
-      "jobTitle": "Développeur Front-End & Python",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "Freelance"
+      "mainEntity": {
+        "@type": "Person",
+        "name": "Sam TOAFODE",
+        "jobTitle": "Développeur Front-End & Python",
+        "description": "Développeur Front-End & Python Junior passionné par les interfaces modernes et interactives",
+        "knowsAbout": ["Développement Web", "Python", "Front-End", "Gestion de Projet"],
+        "skills": [
+          "HTML5",
+          "CSS3",
+          "JavaScript",
+          "Python",
+          "React",
+          "Bootstrap",
+          "Gestion de Projet"
+        ],
+        "award": [
+          "Développeur Web Junior",
+          "Expert en Interfaces Modernes"
+        ]
       }
     }
   </script>
@@ -95,28 +114,32 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/logo.png" alt="Logo Sam TOAFODE">
+      <a href="index.html" class="logo d-flex align-items-center" aria-label="Retour à l'accueil">
+        <img 
+          src="assets/img/logo.png" 
+          alt="Logo Sam TOAFODE - Développeur Web" 
+          loading="eager"
+          decoding="async"
+        />
         <h1 class="sitename">Personal</h1>
       </a>
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="about.html" class="active">À Propos</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Projets</a></li>
-          <li><a href="contact.html">Contact</a></li>
+      <nav id="navmenu" class="navmenu" aria-label="Menu principal">
+        <ul itemscope itemtype="https://schema.org/SiteNavigationElement">
+          <li itemprop="name"><a href="index.html" itemprop="url">Accueil</a></li>
+          <li itemprop="name"><a href="about.html" class="active" aria-current="page" itemprop="url">À propos</a></li>
+          <li itemprop="name"><a href="resume.html" itemprop="url">Resume</a></li>
+          <li itemprop="name"><a href="services.html" itemprop="url">Services</a></li>
+          <li itemprop="name"><a href="portfolio.html" itemprop="url">Projets</a></li>
+          <li itemprop="name"><a href="contact.html" itemprop="url">Contact</a></li>
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list" aria-label="Menu mobile"></i>
       </nav>
 
     </div>
   </header>
 
-  <main class="main">
+  <main class="main" itemscope itemtype="https://schema.org/WebPage">
 
     <!-- Page Title -->
     <div class="page-title" data-aos="fade">
@@ -151,7 +174,7 @@
           <div class="col-lg-8 content">
             <h2>Développeur Web Front-End</h2>
             <p class="fst-italic py-3">
-              Passionné par le monde du développement web et de la technologie, je suis un développeur Front-End, un développeur Python junior, et un junior project manager avec une vision claire : créer des expériences utilisateur fluides et performantes. Mon parcours en Génie Informatique m'a permis d'explorer divers domaines du développement et de la gestion de projets numériques, me dotant ainsi d’une approche structurée et créative.
+              Passionné par le monde du développement web et de la technologie, je suis un développeur Front-End, un développeur Python junior, et un junior project manager avec une vision claire : créer des expériences utilisateur fluides et performantes. Mon parcours en Génie Informatique m'a permis d'explorer divers domaines du développement et de la gestion de projets numériques, me dotant ainsi d'une approche structurée et créative.
             </p>
             <div class="row">
                 <div class="col-lg-6">
@@ -171,7 +194,7 @@
                 </div>
             </div>
             <p class="py-3">
-              Ma passion pour l'innovation et la technologie me fascine. J’aime résoudre des problèmes complexes, concevoir des interfaces engageantes et apprendre continuellement. Mon objectif est de développer des solutions digitales impactantes, en combinant mes compétences techniques et ma créativité. Grâce à mes expériences, j’ai appris à structurer et à piloter des projets en appliquant les méthodologies Agile.
+              Ma passion pour l'innovation et la technologie me fascine. J'aime résoudre des problèmes complexes, concevoir des interfaces engageantes et apprendre continuellement. Mon objectif est de développer des solutions digitales impactantes, en combinant mes compétences techniques et ma créativité. Grâce à mes expériences, j'ai appris à structurer et à piloter des projets en appliquant les méthodologies Agile.
             </p>
         </div>
 
@@ -522,7 +545,7 @@
 
   </main>
 
-  <footer id="footer" class="footer dark-background">
+  <footer id="footer" class="footer dark-background" itemscope itemtype="https://schema.org/WPFooter">
     <div class="container">
       <h3 class="sitename">Sam TOAFODE</h3>
       <p style="font-size: 17px;">Transformons les idées en réalité, une ligne de code à la fois. 💡💻</p>

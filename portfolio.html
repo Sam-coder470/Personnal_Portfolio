@@ -2,20 +2,31 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Projets - Sam TOAFODE</title>
-    <meta
-      name="description"
-      content="Découvrez les projets de Sam TOAFODE, un développeur Front-End et Python passionné par les interfaces modernes et interactives. Explorez mes réalisations et compétences en développement web."
-    />
-    <meta
-      name="keywords"
-      content="projets, développement web, interfaces modernes, compétences techniques, Sam TOAFODE"
-    />
-    <meta name="author" content="Sam TOAFODE" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Sam TOAFODE | Développeur Front-End & Python</title>
 
-    <!-- Balise canonique pour éviter le contenu dupliqué -->
+    <!-- Description et Mots-clés améliorés -->
+    <meta name="description" content="Découvrez le portfolio de projets de Sam TOAFODE : sites web, applications front-end, solutions Python et projets de gestion. Des réalisations modernes et innovantes." />
+    <meta name="keywords" content="portfolio développeur, projets web, applications front-end, Python, gestion de projet, portfolio, Maroc, développement web, interfaces modernes, React, JavaScript, HTML5, CSS3, Bootstrap" />
+    <meta name="author" content="Sam TOAFODE" />
+    <meta name="geo.region" content="MA" />
+    <meta name="geo.placename" content="Maroc" />
+    <meta name="language" content="fr" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="rating" content="general" />
+    <meta name="distribution" content="global" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <!-- Canonical URL -->
     <link rel="canonical" href="https://sam-toafode.wuaze.com/portfolio.html" />
+    <link rel="alternate" hreflang="fr" href="https://sam-toafode.wuaze.com/portfolio.html" />
+    <link rel="alternate" hreflang="x-default" href="https://sam-toafode.wuaze.com/portfolio.html" />
 
     <!-- Favicons -->
     <link href="assets/img/favicon-32x32.png" rel="icon" />
@@ -30,7 +41,6 @@
     />
     <link rel="manifest" href="assets/site.webmanifest" />
     <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
 
     <!-- Open Graph Meta Tags - Optimisés -->
     <meta property="og:title" content="Projets - Sam TOAFODE" />
@@ -66,24 +76,34 @@
     <meta name="twitter:site" content="@samToafode" />
     <meta name="twitter:creator" content="@samToafode" />
 
-    <!-- Meta Robots -->
-    <meta
-      name="robots"
-      content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
-    />
-
-    <!-- Structured Data / Schema.org pour les moteurs de recherche -->
+    <!-- Structured Data / Schema.org amélioré -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "CollectionPage",
-        "name": "Projets",
+        "name": "Portfolio de Sam TOAFODE",
+        "description": "Collection de projets de développement web réalisés par Sam TOAFODE",
         "url": "https://sam-toafode.wuaze.com/portfolio.html",
-        "image": "https://sam-toafode.wuaze.com/assets/img/portfolio/personal1.png",
-        "description": "Découvrez les projets de Sam TOAFODE, un développeur Front-End et Python passionné par les interfaces modernes et interactives. Explorez mes réalisations et compétences en développement web.",
         "author": {
           "@type": "Person",
-          "name": "Sam TOAFODE"
+          "name": "Sam TOAFODE",
+          "jobTitle": "Développeur Front-End & Python",
+          "description": "Développeur Front-End & Python Junior passionné par les interfaces modernes et interactives",
+          "knowsAbout": ["Développement Web", "Python", "Front-End", "Gestion de Projet"],
+          "skills": [
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "Python",
+            "React",
+            "Bootstrap",
+            "Gestion de Projet"
+          ]
+        },
+        "about": {
+          "@type": "Thing",
+          "name": "Développement Web",
+          "description": "Projets de développement web et applications"
         }
       }
     </script>
@@ -135,27 +155,31 @@
       <div
         class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
       >
-        <a href="index.html" class="logo d-flex align-items-center">
-          <!-- Uncomment the line below if you also wish to use an image logo -->
-          <img src="assets/img/logo.png" alt="Logo Sam TOAFODE" />
+        <a href="index.html" class="logo d-flex align-items-center" aria-label="Retour à l'accueil">
+          <img 
+            src="assets/img/logo.png" 
+            alt="Logo Sam TOAFODE - Développeur Web" 
+            loading="eager"
+            decoding="async"
+          />
           <h1 class="sitename">Personal</h1>
         </a>
 
-        <nav id="navmenu" class="navmenu">
-          <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="about.html">À Propos</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="portfolio.html" class="active">Projets</a></li>
-            <li><a href="contact.html">Contact</a></li>
+        <nav id="navmenu" class="navmenu" aria-label="Menu principal">
+          <ul itemscope itemtype="https://schema.org/SiteNavigationElement">
+            <li itemprop="name"><a href="index.html" itemprop="url">Accueil</a></li>
+            <li itemprop="name"><a href="about.html" itemprop="url">À propos</a></li>
+            <li itemprop="name"><a href="resume.html" itemprop="url">Resume</a></li>
+            <li itemprop="name"><a href="services.html" itemprop="url">Services</a></li>
+            <li itemprop="name"><a href="portfolio.html" class="active" aria-current="page" itemprop="url">Projets</a></li>
+            <li itemprop="name"><a href="contact.html" itemprop="url">Contact</a></li>
           </ul>
-          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list" aria-label="Menu mobile"></i>
         </nav>
       </div>
     </header>
 
-    <main class="main">
+    <main class="main" itemscope itemtype="https://schema.org/WebPage">
       <!-- Page Title -->
       <div class="page-title" data-aos="fade">
         <div class="heading">
@@ -374,7 +398,7 @@
       <!-- /Portfolio Section -->
     </main>
 
-    <footer id="footer" class="footer dark-background">
+    <footer id="footer" class="footer dark-background" itemscope itemtype="https://schema.org/WPFooter">
       <div class="container">
         <h3 class="sitename">Sam TOAFODE</h3>
         <p style="font-size: 17px">

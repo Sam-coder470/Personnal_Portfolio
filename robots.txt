@@ -1,0 +1,24 @@
+# robots.txt pour sam-toafode.wuaze.com
+
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /about.html
+Allow: /resume.html
+Allow: /services.html
+Allow: /portfolio.html
+Allow: /contact.html
+Allow: /assets/img/
+Allow: /assets/css/
+Allow: /assets/js/
+
+# Sitemap
+Sitemap: https://sam-toafode.wuaze.com/sitemap.xml
+
+# Optimisation pour les moteurs de recherche
+Crawl-delay: 1
+Disallow: /assets/vendor/
+Disallow: /assets/php-email-form/
+Disallow: /assets/site.webmanifest
+Disallow: /assets/img/favicon*
+Disallow: /assets/img/apple-touch-icon.png 
