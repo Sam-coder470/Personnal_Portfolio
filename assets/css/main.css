@@ -10,51 +10,43 @@
 # Font & Color Variables
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
-/* Fonts */
+/* Fonts & variables de base */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", "Helvetica Neue",
+    Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Raleway", sans-serif;
+  --nav-font: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  --background-color: #020617; /* Bleu nuit profond */
+  --default-color: #e5e7eb; /* Texte principal gris clair */
+  --heading-color: #f9fafb; /* Titres blanc cassé */
+  --accent-color: #6366f1; /* Indigo indigo data/IA */
+  --surface-color: #020617; /* Fond des sections */
+  --surface-elevated-color: #0b1120; /* Cartes / blocs */
+  --contrast-color: #020617; /* Texte sur éléments accentués */
+
+  --nav-color: #e5e7eb;
+  --nav-hover-color: #a5b4fc;
+  --nav-mobile-background-color: #020617;
+  --nav-dropdown-background-color: #020617;
+  --nav-dropdown-color: #e5e7eb;
+  --nav-dropdown-hover-color: #a5b4fc;
 }
 
-/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
-  --background-color: #000000; /* Background color for the entire website, including individual sections */
-  --default-color: #fafafa; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #ffffff; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #18d26e; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #1a1a1a; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #000000; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
-}
-
-/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
-:root {
-  --nav-color: #fafafa;  /* The default color of the main navmenu links */
-  --nav-hover-color: #18d26e; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #1a1a1a; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #1a1a1a; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #fafafa; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #18d26e; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
-}
-
-/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
+/* Color Presets - variantes de fond réutilisables */
 
 .light-background {
-  --background-color: #1a1a1a;
-  --surface-color: #343434;
+  --background-color: var(--surface-color);
+  --surface-color: var(--surface-elevated-color);
 }
 
 .dark-background {
-  --background-color: rgba(15, 15, 15, 0.975);
-  --default-color: #ffffff;
-  --heading-color: #ffffff;
-  --surface-color: #292929f9;
-  --contrast-color: #000000;
-}
-
-/* Smooth scroll */
-:root {
-  scroll-behavior: smooth;
+  --background-color: #020617;
+  --default-color: #e5e7eb;
+  --heading-color: #f9fafb;
+  --surface-color: #020617;
+  --contrast-color: #020617;
 }
 
 /*--------------------------------------------------------------
@@ -64,6 +56,9 @@ body {
   color: var(--default-color);
   background-color: var(--background-color);
   font-family: var(--default-font);
+  font-size: 15px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
 }
 
 a {
@@ -85,6 +80,46 @@ h5,
 h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
+  letter-spacing: 0.02em;
+}
+
+h1 {
+  font-weight: 800;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+/* Petits utilitaires de typographie */
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 11px;
+  font-weight: 600;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+}
+
+.text-soft {
+  color: color-mix(in srgb, var(--default-color), transparent 25%);
+}
+
+.card-elevated {
+  background: var(--surface-elevated-color);
+  border-radius: 16px;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 82%);
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.35);
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 78%);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
 }
 
 /* PHP Email Form Messages
@@ -501,6 +536,8 @@ h6 {
   padding-top: 5px;
 }
 
+
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -695,14 +732,15 @@ section,
   justify-content: center;
 }
 
-.hero img {
+.hero::before {
+  content: "";
   position: absolute;
   inset: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
+  background:
+    radial-gradient(circle at top left, rgba(99, 102, 241, 0.35), transparent 55%),
+    radial-gradient(circle at bottom right, rgba(56, 189, 248, 0.25), transparent 55%),
+    linear-gradient(to bottom, rgba(2, 6, 23, 0.9), rgba(2, 6, 23, 1));
+  z-index: 2;
 }
 
 .hero .container {
@@ -710,24 +748,76 @@ section,
   z-index: 3;
 }
 
-.hero h2 {
-  margin: 0;
-  font-size: 64px;
-  font-weight: 700;
+/* Grille du hero */
+.hero .hero-grid {
+  margin-top: 40px;
 }
 
-.hero p {
-  margin: 5px 0 0 0;
-  font-size: 26px;
+.hero .hero-title {
+  margin: 0 0 12px 0;
+  font-size: 56px;
+  font-weight: 800;
 }
 
-.hero p span {
-  letter-spacing: 1px;
-  border-bottom: 2px solid var(--accent-color);
+.hero .hero-role {
+  margin: 4px 0 0 0;
+  font-size: 22px;
+}
+
+.hero .hero-role span {
+  letter-spacing: 0.04em;
+  border-bottom: 2px solid color-mix(in srgb, var(--accent-color), transparent 30%);
+}
+
+.hero .hero-subtitle {
+  margin-top: 18px;
+  font-size: 16px;
+  max-width: 520px;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+}
+
+.hero .hero-actions {
+  margin-top: 26px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.hero .btn-hero-primary,
+.hero .btn-hero-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 22px;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 500;
+  border: 1px solid transparent;
+}
+
+.hero .btn-hero-primary {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  border-color: var(--accent-color);
+}
+
+.hero .btn-hero-primary:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 15%);
+}
+
+.hero .btn-hero-outline {
+  background-color: transparent;
+  border-color: color-mix(in srgb, var(--default-color), transparent 70%);
+  color: var(--default-color);
+}
+
+.hero .btn-hero-outline:hover {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .hero .social-links {
-  margin-top: 25px;
+  margin-top: 24px;
 }
 
 .hero .social-links a {
@@ -740,7 +830,7 @@ section,
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-right: 20px;
+  margin-right: 16px;
   transition: 0.3s;
 }
 
@@ -748,13 +838,80 @@ section,
   background-color: var(--accent-color);
 }
 
+.hero-profile {
+  padding: 22px 22px 20px;
+}
+
+.hero-profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.hero-profile-name {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.hero-profile-role {
+  font-size: 13px;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+}
+
+.hero-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 12px 0 14px 0;
+}
+
+.hero-metric {
+  padding: 10px 10px 8px;
+  border-radius: 10px;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);
+}
+
+.hero-metric span {
+  display: block;
+}
+
+.hero-metric-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: color-mix(in srgb, var(--default-color), transparent 45%);
+}
+
+.hero-metric-value {
+  margin-top: 4px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.hero-tech-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 4px;
+}
+
 @media (max-width: 768px) {
-  .hero h2 {
-    font-size: 32px;
+  .hero .hero-title {
+    font-size: 34px;
   }
 
-  .hero p {
-    font-size: 20px;
+  .hero .hero-role {
+    font-size: 18px;
+  }
+
+  .hero .hero-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-metrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -1428,9 +1585,9 @@ section,
 }
 
 .contact .php-email-form {
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  margin-top: 30px;
+  box-shadow: none;
+  padding: 0;
+  margin-top: 0;
 }
 
 @media (max-width: 575px) {
@@ -1443,8 +1600,8 @@ section,
 .contact .php-email-form input[type=email],
 .contact .php-email-form textarea {
   color: var(--default-color);
-  background-color: color-mix(in srgb, var(--background-color), transparent 50%);
-  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+  background-color: color-mix(in srgb, var(--background-color), transparent 40%);
+  border-color: color-mix(in srgb, var(--default-color), transparent 75%);
   font-size: 14px;
   padding: 10px 15px;
   box-shadow: none;
@@ -1474,4 +1631,104 @@ section,
 
 .contact .php-email-form button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+/*--------------------------------------------------------------
+# Premium CV Download Button & Animations
+--------------------------------------------------------------*/
+.btn-cv-download {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--contrast-color);
+  background: linear-gradient(135deg, var(--accent-color) 0%, #818cf8 100%);
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.4),
+              0 4px 8px rgba(99, 102, 241, 0.2);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+.btn-cv-download::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.6s;
+}
+
+.btn-cv-download:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(99, 102, 241, 0.5),
+              0 6px 12px rgba(99, 102, 241, 0.3);
+  background: linear-gradient(135deg, #818cf8 0%, var(--accent-color) 100%);
+}
+
+.btn-cv-download:hover::before {
+  left: 100%;
+}
+
+.btn-cv-download:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+}
+
+.btn-cv-download i {
+  font-size: 18px;
+  transition: transform 0.3s;
+}
+
+.btn-cv-download:hover i {
+  transform: translateY(-2px);
+}
+
+/* Animations pour les cartes */
+.card-elevated {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-elevated:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 56px rgba(15, 23, 42, 0.45),
+              0 0 0 1px color-mix(in srgb, var(--accent-color), transparent 30%);
+  border-color: color-mix(in srgb, var(--accent-color), transparent 50%);
+}
+
+/* Animations pour les boutons hero */
+.hero .btn-hero-primary,
+.hero .btn-hero-outline {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero .btn-hero-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.35);
+}
+
+.hero .btn-hero-outline:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+}
+
+/* Animation pour les chips */
+.chip {
+  transition: all 0.2s ease;
+}
+
+.chip:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+  transform: scale(1.05);
 }
