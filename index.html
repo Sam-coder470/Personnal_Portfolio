@@ -26,7 +26,9 @@
     <meta name="rating" content="general" />
     <meta name="distribution" content="global" />
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-    <meta name="googlebot" content="index, follow" />
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="slurp" content="index, follow" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="theme-color" content="#ffffff" />
     <meta name="mobile-web-app-capable" content="yes" />
@@ -60,13 +62,13 @@
     <meta property="og:url" content="https://sam-toafode.wuaze.com/" />
     <meta
       property="og:image"
-      content="https://sam-toafode.wuaze.com/assets/img/portfolio/personal1.png"
+      content="assets/img/opengraph.png"
     />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta
       property="og:image:alt"
-      content="Sam TOAFODE - Portfolio de développeur web"
+      content="Sam TOAFODE - Portfolio Data Science & Intelligence Artificielle"
     />
     <meta
       property="og:description"
@@ -87,11 +89,11 @@
     />
     <meta
       name="twitter:image"
-      content="https://sam-toafode.wuaze.com/assets/img/portfolio/personal1.png"
+      content="assets/img/opengraph.png"
     />
     <meta
       name="twitter:image:alt"
-      content="Photo du portfolio de Sam TOAFODE"
+      content="Sam TOAFODE - Portfolio Data Science & Intelligence Artificielle"
     />
     <meta name="twitter:site" content="@samToafode" />
     <meta name="twitter:creator" content="@samToafode" />
@@ -190,7 +192,7 @@
       >
         <a href="index.html" class="logo d-flex align-items-center" aria-label="Retour à l'accueil">
           <img 
-            src="assets/img/logo.png" 
+            src="assets/img/logo.jpeg" 
             alt="Logo Sam TOAFODE - Data Science & IA" 
             loading="eager"
             decoding="async"
@@ -225,12 +227,12 @@
               <p class="hero-role" itemprop="description">
                 <span
                   class="typed"
-                  data-typed-items="Data Scientist Junior, Data Analyst Junior, Étudiant en Bachelor Science des Données & IA"
+                  data-typed-items=" Data Analyst Junior, Étudiant en Bachelor Science des Données & IA"
                   >Data &amp; IA</span
                 ><span class="typed-cursor typed-cursor--blink"></span>
               </p>
               <p class="hero-subtitle">
-                Étudiant en Bachelor Science des Données &amp; Intelligence Artificielle à Agadir,
+                Étudiant en Bachelor Science des Données &amp; Intelligence Artificielle à Fès,
                 avec un socle solide en Génie Informatique. J’aime concevoir des solutions simples
                 qui relient données, modèles et décisions réelles.
               </p>
@@ -443,46 +445,96 @@
     </main>
 
     <footer id="footer" class="footer dark-background" itemscope itemtype="https://schema.org/WPFooter">
-      <div class="container">
-        <h3 class="sitename" itemprop="name">Sam TOAFODE</h3>
-        <p style="font-size: 17px" itemprop="description">
-          Transformons les données en décisions, une ligne de code à la fois.
-        </p>
-        <div class="social-links d-flex justify-content-center">
-          <a
-            href="https://x.com/samToafode?t=im6pTVRE_JLntFuyZZ8dMA&s=09"
-            aria-label="X (Twitter)"
-            ><i class="bi bi-twitter-x"></i
-          ></a>
-          <a
-            href="https://www.facebook.com/profile.php?id=100083383636319"
-            aria-label="Facebook"
-            ><i class="bi bi-facebook"></i
-          ></a>
-          <a
-            href="https://www.instagram.com/daltonn.sam/profilecard/?igsh=d2dwenl1cThxZ2R6"
-            aria-label="Instagram"
-            ><i class="bi bi-instagram"></i
-          ></a>
-          <a
-            href="https://www.linkedin.com/in/samloikcodotoafode"
-            aria-label="LinkedIn"
-            ><i class="bi bi-linkedin"></i
-          ></a>
-          <a href="https://www.github.com/Sam-coder470" aria-label="GitHub"
-            ><i class="bi bi-github"></i
-          ></a>
+      <div class="container footer-inner">
+        <div class="footer-main">
+          <!-- Colonne 1 : Branding & pitch -->
+          <section class="footer-brand" itemprop="about" itemscope itemtype="https://schema.org/Person">
+            <img 
+              src="assets/img/logo.jpeg" 
+              alt="Logo Sam TOAFODE" 
+              class="footer-brand-logo"
+              loading="lazy"
+            />
+            <div class="footer-brand-title">
+              <span>Data · IA · BI</span>
+              <span itemprop="name">Sam TOAFODE</span>
+            </div>
+            <p class="footer-tagline" itemprop="description">
+              Étudiant en Bachelor Science des Données &amp; Intelligence Artificielle à l’EST Fès.
+            </p>
+            <div class="footer-pillars">
+              <span>Data Science</span>
+              <span>Machine Learning</span>
+              <span>Business Intelligence</span>
+              <span>Dév. web data</span>
+            </div>
+            <div class="social-links" aria-label="Réseaux sociaux">
+              <a
+                href="https://x.com/samToafode?t=im6pTVRE_JLntFuyZZ8dMA&s=09"
+                aria-label="X (Twitter)"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/profile.php?id=100083383636319"
+                aria-label="Facebook"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/daltonn.sam/profilecard/?igsh=d2dwenl1cThxZ2R6"
+                aria-label="Instagram"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/samloikcodotoafode"
+                aria-label="LinkedIn"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+              <a href="https://www.github.com/Sam-coder470" aria-label="GitHub"
+                ><i class="bi bi-github"></i
+              ></a>
+            </div>
+          </section>
+
+          <!-- Colonne 2 : Navigation rapide -->
+          <nav class="footer-nav" aria-label="Navigation pied de page">
+            <div class="footer-column-title">Navigation</div>
+            <ul class="footer-links">
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="about.html">À propos</a></li>
+              <li><a href="resume.html">Parcours &amp; CV</a></li>
+              <li><a href="portfolio.html">Projets Data &amp; IA</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+
+          <!-- Colonne 3 : Contact -->
+          <section class="footer-contact-wrapper">
+            <div class="footer-column-title">Contact</div>
+            <ul class="footer-contact">
+              <li>
+                <strong>Localisation</strong><br />
+                EST Fès · Maroc
+              </li>
+              <li>
+                <strong>Email</strong><br />
+                <a href="mailto:samtoafode@gmail.com">samloik.codotoafode.@usmba.ac.ma</a>
+              </li>
+              <li>
+                <strong>Disponible pour</strong><br />
+                Stages, alternance, missions data &amp; BI
+              </li>
+            </ul>
+          </section>
         </div>
-        <div class="container">
-          <div class="copyright">
-            <span>Copyright &copy; 2025</span>
-            <strong class="px-1 sitename">Sam TOAFODE</strong>
-            <span>Tous droits réservés</span>
-          </div>
-          <div class="credits">
+
+        <div class="footer-bottom">
+          <small>
+            &copy; 2025 <span class="sitename">Sam TOAFODE</span> · Tous droits réservés
+          </small>
+          <small>
             Conçu par
             <a href="https://www.github.com/Sam-coder470">Sam TOAFODE</a>
-          </div>
+          </small>
         </div>
       </div>
     </footer>

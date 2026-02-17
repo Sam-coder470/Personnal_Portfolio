@@ -16,7 +16,9 @@
     <meta name="rating" content="general" />
     <meta name="distribution" content="global" />
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-    <meta name="googlebot" content="index, follow" />
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="slurp" content="index, follow" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="theme-color" content="#ffffff" />
     <meta name="mobile-web-app-capable" content="yes" />
@@ -51,9 +53,9 @@
     />
     <meta
       property="og:image"
-      content="https://sam-toafode.wuaze.com/assets/img/portfolio/personal1.png"
+      content="assets/img/opengraph3.png"
     />
-    <meta property="og:image:alt" content="Projets - Sam TOAFODE" />
+    <meta property="og:image:alt" content="Projets Data Science & IA - Sam TOAFODE" />
     <meta
       property="og:description"
       content="Découvrez les projets de data science, d’IA appliquée et d’applications data-driven réalisés par Sam TOAFODE, étudiant en Bachelor Science des Données & IA."
@@ -70,38 +72,72 @@
     />
     <meta
       name="twitter:image"
-      content="https://sam-toafode.wuaze.com/assets/img/portfolio/personal1.png"
+      content="assets/img/opengraph3.png"
     />
-    <meta name="twitter:image:alt" content="Projets - Sam TOAFODE" />
+    <meta name="twitter:image:alt" content="Projets Data Science & IA - Sam TOAFODE" />
     <meta name="twitter:site" content="@samToafode" />
     <meta name="twitter:creator" content="@samToafode" />
 
-    <!-- Structured Data / Schema.org amélioré -->
+    <!-- Structured Data / Schema.org optimisé pour SEO -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "CollectionPage",
-        "name": "Portfolio Data & IA de Sam TOAFODE",
-        "description": "Collection de projets de data science, IA et développement web data-driven réalisés par Sam TOAFODE.",
+        "name": "Portfolio Data & IA - Sam TOAFODE",
+        "description": "Découvrez les projets de Data Science, IA et développement data-driven de Sam TOAFODE : N.E.M.O.S (assistant IA), applications web data-driven et projets Python.",
         "url": "https://sam-toafode.wuaze.com/portfolio.html",
+        "inLanguage": "fr-FR",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "Portfolio Sam TOAFODE",
+          "url": "https://sam-toafode.wuaze.com"
+        },
         "author": {
           "@type": "Person",
+          "@id": "https://sam-toafode.wuaze.com/#person",
           "name": "Sam TOAFODE",
-          "jobTitle": "Étudiant en Science des Données & IA",
-          "description": "Profil orienté Data Science & IA, avec une base en développement web.",
-          "knowsAbout": ["Data Science", "Machine Learning", "Analyse de Données", "Python", "Développement Web"],
-          "skills": [
-            "Python pour la data",
-            "Pandas & NumPy",
-            "Scikit-learn",
-            "SQL",
-            "Visualisation de données"
-          ]
+          "jobTitle": "Étudiant en Bachelor Science des Données & Intelligence Artificielle",
+          "url": "https://sam-toafode.wuaze.com"
         },
         "about": {
           "@type": "Thing",
-          "name": "Data Science & IA",
-          "description": "Projets de data science, IA appliquée et développement web data-driven."
+          "name": "Data Science & Intelligence Artificielle",
+          "description": "Projets de data science, machine learning, IA appliquée, Business Intelligence et développement web data-driven."
+        },
+        "mainEntity": {
+          "@type": "ItemList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "item": {
+                "@type": "CreativeWork",
+                "name": "N.E.M.O.S - Neural Enhanced Multimodal Optimized System",
+                "url": "https://sam-toafode.wuaze.com/portfolio-details(4).html",
+                "description": "Intelligence artificielle évolutive avec NLP, Python et Eel"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "item": {
+                "@type": "CreativeWork",
+                "name": "StarTravaux.Ma",
+                "url": "https://sam-toafode.wuaze.com/portfolio-details(2).html",
+                "description": "Site web professionnel développé en stage"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "item": {
+                "@type": "CreativeWork",
+                "name": "Portfolio Personnel",
+                "url": "https://sam-toafode.wuaze.com/portfolio-details(3).html",
+                "description": "Portfolio moderne optimisé SEO pour Data Science & IA"
+              }
+            }
+          ]
         }
       }
     </script>
@@ -155,7 +191,7 @@
       >
         <a href="index.html" class="logo d-flex align-items-center" aria-label="Retour à l'accueil">
           <img 
-            src="assets/img/logo.png" 
+            src="assets/img/logo.jpeg" 
             alt="Logo Sam TOAFODE - Data Science & IA" 
             loading="eager"
             decoding="async"

@@ -16,7 +16,9 @@
     <meta name="rating" content="general" />
     <meta name="distribution" content="global" />
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-    <meta name="googlebot" content="index, follow" />
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="slurp" content="index, follow" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="theme-color" content="#ffffff" />
     <meta name="mobile-web-app-capable" content="yes" />
@@ -54,11 +56,11 @@
     />
     <meta
       property="og:image"
-      content="https://sam-toafode.wuaze.com/assets/img/portfolio/personal1.png"
+      content="assets/img/opengraph3.png"
     />
     <meta
       property="og:image:alt"
-      content="Sam TOAFODE - Portfolio de développeur web"
+      content="Sam TOAFODE - Parcours & CV Data Science & IA"
     />
     <meta
       property="og:description"
@@ -79,46 +81,112 @@
     />
     <meta
       name="twitter:image"
-      content="https://sam-toafode.wuaze.com/assets/img/portfolio/personal1.png"
+      content="assets/img/opengraph3.png"
     />
     <meta
       name="twitter:image:alt"
-      content="Photo du portfolio de Sam TOAFODE"
+      content="Sam TOAFODE - Parcours & CV Data Science & IA"
     />
     <meta name="twitter:site" content="@samToafode" />
     <meta name="twitter:creator" content="@samToafode" />
 
-    <!-- Structured Data / Schema.org amélioré -->
+    <!-- Structured Data / Schema.org optimisé pour SEO -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Resume",
-        "name": "CV de Sam TOAFODE",
-        "description": "Curriculum Vitae de Sam TOAFODE, profil orienté Data Science & IA",
+        "name": "Parcours & CV - Sam TOAFODE | Data Science & IA",
+        "description": "Consultez le parcours de Sam TOAFODE, étudiant en Bachelor Science des Données & IA avec un background en Génie Informatique. Formation, expériences et compétences en data science, machine learning et développement web.",
         "url": "https://sam-toafode.wuaze.com/resume.html",
+        "inLanguage": "fr-FR",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "Portfolio Sam TOAFODE",
+          "url": "https://sam-toafode.wuaze.com"
+        },
         "mainEntity": {
           "@type": "Person",
+          "@id": "https://sam-toafode.wuaze.com/#person",
           "name": "Sam TOAFODE",
-          "jobTitle": "Étudiant en Science des Données & IA",
-          "description": "Étudiant en Bachelor Science des Données & Intelligence Artificielle avec une base solide en Génie Informatique.",
-          "knowsAbout": ["Data Science", "Machine Learning", "Analyse de Données", "Python", "Développement Web"],
-          "skills": [
-            "Python pour la data",
-            "Pandas & NumPy",
-            "Scikit-learn",
-            "SQL",
-            "Visualisation de données",
-            "Git & GitHub"
+          "jobTitle": "Étudiant en Bachelor Science des Données & Intelligence Artificielle",
+          "description": "Étudiant en Bachelor Science des Données & Intelligence Artificielle à l'EST Fès, avec un background solide en Génie Informatique (DUT à l'EST Agadir). Spécialisé en data science, machine learning, Business Intelligence et développement web.",
+          "url": "https://sam-toafode.wuaze.com",
+          "image": "https://sam-toafode.wuaze.com/assets/img/logo.jpeg",
+          "sameAs": [
+            "https://www.linkedin.com/in/samloikcodotoafode",
+            "https://www.github.com/Sam-coder470",
+            "https://x.com/samToafode"
           ],
+          "knowsAbout": [
+            "Data Science",
+            "Machine Learning",
+            "Intelligence Artificielle",
+            "Business Intelligence",
+            "Analyse de Données",
+            "Python",
+            "SQL",
+            "Power BI",
+            "Développement Web"
+          ],
+          "skills": [
+            "Python pour la data (Pandas, NumPy, Scikit-learn)",
+            "Machine Learning supervisé et non supervisé",
+            "SQL et modélisation de données",
+            "Visualisation de données (Matplotlib, Seaborn)",
+            "Business Intelligence (Power BI, Excel avancé, Power Query)",
+            "Développement web Front-End (HTML, CSS, JavaScript, React)",
+            "Git & GitHub pour le versioning"
+          ],
+          "alumniOf": [
+            {
+              "@type": "CollegeOrUniversity",
+              "name": "École Supérieure de Technologie de Fès",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Fès",
+                "addressCountry": "MA"
+              }
+            },
+            {
+              "@type": "CollegeOrUniversity",
+              "name": "École Supérieure de Technologie d'Agadir",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Agadir",
+                "addressCountry": "MA"
+              }
+            }
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Fès",
+            "addressRegion": "Fès-Meknès",
+            "addressCountry": "MA"
+          },
           "award": [
             "Junior Data Scientist",
-            "Parcours orienté IA appliquée"
+            "Étudiant en Bachelor Science des Données & IA"
           ],
-          "hasCredential": {
-            "@type": "EducationalCredential",
-            "credentialCategory": "degree",
-            "educationalLevel": "Bachelor"
-          }
+          "hasCredential": [
+            {
+              "@type": "EducationalCredential",
+              "credentialCategory": "degree",
+              "educationalLevel": "Bachelor",
+              "about": "Science des Données & Intelligence Artificielle",
+              "educationalCredentialAwarded": "Bachelor en Science des Données & IA"
+            },
+            {
+              "@type": "EducationalCredential",
+              "credentialCategory": "degree",
+              "educationalLevel": "DUT",
+              "about": "Génie Informatique"
+            },
+            {
+              "@type": "EducationalCredential",
+              "credentialCategory": "certificate",
+              "about": "IBM Data Analyst Professional Certificate"
+            }
+          ]
         }
       }
     </script>
@@ -170,7 +238,7 @@
       <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
         <a href="index.html" class="logo d-flex align-items-center" aria-label="Retour à l'accueil">
           <img 
-            src="assets/img/logo.png" 
+            src="assets/img/logo.jpeg" 
             alt="Logo Sam TOAFODE - Data Science & IA" 
             loading="eager"
             decoding="async"
@@ -231,7 +299,7 @@
                 <ul>
                   <li>Fès, Maroc</li>
                   <li>(212) 724-160846</li>
-                  <li>samloik.codotoafode.77@edu.uiz.ac.ma</li>
+                  <li>samloik.codotoafode.@usmba.ac.ma</li>
                 </ul>
               </div>
               <!-- End Resume Item -->
@@ -247,7 +315,7 @@
               <div class="resume-item">
                 <h4>DUT Génie Informatique</h4>
                 <h5>2023 - 2025</h5>
-                <p><em>Ecole Supérieure de Technologie d'Agadir</em></p>
+                <p><em>Ecole Supérieure de Technologie de Fès</em></p>
               </div>
               <!-- End Resume Item -->
 
@@ -328,7 +396,7 @@
               <!-- End Resume Item -->
             </div>
 
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <!-- <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
               <h3 class="resume-title">Compétences Data & IA</h3>
               <div class="resume-item pb-0">
                 <ul>
@@ -339,7 +407,7 @@
                   <li>Bonnes pratiques de versioning (Git/GitHub) et collaboration sur projets data.</li>
                 </ul>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
         <div class="text-center mt-5">
