@@ -287,15 +287,13 @@
                 <div class="eyebrow mb-2">Compétences mobilisées</div>
                 <h3 class="h5 mb-3">Ce que j'ai développé</h3>
                 <p class="text-soft mb-3">
-                  Ce projet m'a permis d'approfondir l'ensemble du pipeline d'un projet de machine learning supervisé,
-                  de la donnée brute à la comparaison de modèles.
+                  Ce projet m’a permis de parcourir tout le pipeline d’un cas ML supervisé,
+                  de la donnée brute jusqu’à la comparaison de modèles.
                 </p>
                 <ul class="mb-3">
-                  <li>Nettoyage et encodage de données médicales hétérogènes</li>
-                  <li>Rééquilibrage de classes déséquilibrées (RandomOverSampler)</li>
+                  <li>Préparation de données médicales (nettoyage, encodage, rééquilibrage)</li>
                   <li>Sélection de variables : LASSO, PCA, RFE</li>
-                  <li>Comparaison de classifieurs et analyse des métriques</li>
-                  <li>Visualisation avancée (heatmaps, radar charts, bar plots)</li>
+                  <li>Comparaison de classifieurs et lecture des métriques clés</li>
                 </ul>
                 <div class="hero-tech-chips">
                   <span class="chip">Python</span>
@@ -319,32 +317,17 @@
               >
                 <h2 class="h4 mb-3">Prédiction du Risque de Crise Cardiaque</h2>
                 <p class="mb-3">
-                  Ce projet de machine learning a pour objectif de prédire si un patient est susceptible de subir
-                  une crise cardiaque, à partir d'un ensemble de données médicales et comportementales comprenant
-                  plus de 8 000 observations issues de Kaggle. Le dataset inclut des variables telles que l'âge,
-                  le sexe, le cholestérol, la pression artérielle, la fréquence cardiaque, le diabète,
-                  les antécédents familiaux, le tabagisme, l'obésité, la sédentarité et le régime alimentaire.
-                </p>
-                <p class="mb-3">
-                  La première phase a consisté en un nettoyage rigoureux des données : suppression des doublons,
-                  encodage des variables catégorielles (one-hot encoding, label encoding, fonctions personnalisées),
-                  et décomposition de la colonne <em>Blood Pressure</em> en deux mesures distinctes (systolique et diastolique).
-                  Le déséquilibre des classes (64 % sans risque, 36 % à risque) a été corrigé grâce au <strong>RandomOverSampler</strong>
-                  de la bibliothèque imbalanced-learn.
-                </p>
-                <p class="mb-3">
-                  Trois méthodes de sélection de variables ont ensuite été comparées : le <strong>LASSO</strong> (régularisation L1),
-                  l'<strong>Analyse en Composantes Principales (PCA)</strong>, et l'<strong>Élimination Récursive de Variables (RFE)</strong>.
-                  Pour chaque méthode, plusieurs classifieurs ont été entraînés et évalués : Random Forest, KNN,
-                  Decision Tree, Gradient Boosting, SVM et Naive Bayes. Les performances ont été analysées via
-                  l'accuracy, la précision, le rappel, le score F1 et la courbe ROC AUC, visualisés à travers
-                  des heatmaps, des radar charts et des bar plots comparatifs.
+                  Objectif : prédire si un patient présente un risque de crise cardiaque à partir de données médicales
+                  et de mode de vie (âge, cholestérol, pression artérielle, diabète, tabac, etc.) sur plus de 8 000 cas Kaggle.
+                  Après nettoyage et encodage des variables, la colonne <em>Blood Pressure</em> a été séparée
+                  en valeurs systolique et diastolique, puis les classes ont été rééquilibrées avec
+                  <strong>RandomOverSampler</strong>.
                 </p>
                 <p class="mb-0">
-                  Ce projet illustre une maîtrise complète du pipeline de machine learning supervisé,
-                  depuis la préparation des données jusqu'à l'interprétation des résultats, en passant
-                  par la sélection de modèles — des compétences directement applicables à des problématiques
-                  réelles en santé, finance ou industrie.
+                  Trois approches de sélection de variables (LASSO, PCA, RFE) ont été combinées à plusieurs classifieurs
+                  (Random Forest, KNN, Decision Tree, Gradient Boosting, SVM, Naive Bayes), évalués via accuracy,
+                  rappel, F1 et ROC AUC. Le résultat est un pipeline complet, réutilisable pour d’autres cas de
+                  classification binaire en santé ou dans d’autres domaines.
                 </p>
               </div>
             </div>

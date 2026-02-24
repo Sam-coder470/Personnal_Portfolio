@@ -343,20 +343,13 @@
                 <div class="eyebrow mb-2">Compétences mobilisées</div>
                 <h3 class="h5 mb-3">Ce que j'ai développé</h3>
                 <p class="text-soft mb-3">
-                  Ce projet couvre un pipeline ML complet orienté application
-                  médicale réelle, de l'exploration des données jusqu'à la
-                  sauvegarde et le rechargement du modèle final.
+                  Projet de classification binaire complet, depuis l’exploration des données
+                  jusqu’à un modèle réutilisable pour prédire bénin / malin.
                 </p>
                 <ul class="mb-3">
-                  <li>Exploration, détection d'outliers (méthode IQR)</li>
-                  <li>Normalisation StandardScaler et encodage one-hot</li>
-                  <li>Sélection de 15 features par Mutual Information</li>
-                  <li>Optimisation des hyperparamètres (GridSearchCV)</li>
-                  <li>Validation croisée StratifiedKFold (5 folds)</li>
-                  <li>Courbe d'apprentissage et analyse ROC AUC</li>
-                  <li>
-                    Sauvegarde du modèle et prédiction sur nouveau patient
-                  </li>
+                  <li>Exploration, détection d’outliers (méthode IQR)</li>
+                  <li>Normalisation StandardScaler et sélection de 15 features (Mutual Information)</li>
+                  <li>Optimisation (GridSearchCV) et validation StratifiedKFold</li>
                 </ul>
                 <div class="hero-tech-chips">
                   <span class="chip">Python</span>
@@ -382,55 +375,16 @@
                   Classification du Cancer du Sein – Bénin ou Malin
                 </h2>
                 <p class="mb-3">
-                  Ce projet de machine learning a pour objectif de classer
-                  automatiquement une tumeur mammaire comme
-                  <strong>bénigne (B)</strong> ou <strong>maligne (M)</strong>,
-                  à partir de mesures quantitatives extraites d'images
-                  microscopiques de biopsies. Le dataset utilisé est le célèbre
-                  <em>UCI Breast Cancer Wisconsin</em>, disponible sur Kaggle,
-                  qui contient 569 observations et 30 features morphologiques
-                  telles que le rayon, le périmètre, l'aire, la compacité ou
-                  encore la concavité des cellules, mesurées sous trois angles :
-                  moyenne, erreur standard et pire valeur.
-                </p>
-                <p class="mb-3">
-                  La phase d'exploration a permis de confirmer l'absence de
-                  doublons et de valeurs nulles (hormis une colonne inutile
-                  supprimée), et de visualiser la distribution des classes (63 %
-                  bénignes, 37 % malignes). Les outliers ont été détectés via la
-                  <strong>méthode IQR</strong>. Après encodage one-hot de la
-                  variable cible et suppression des features faiblement
-                  corrélées avec le diagnostic (corrélation &lt; 0,05), les
-                  données ont été normalisées avec
-                  <strong>StandardScaler</strong> et sauvegardées pour une
-                  réutilisation future via <em>joblib</em>.
-                </p>
-                <p class="mb-3">
-                  La sélection de variables a été réalisée avec
-                  <strong>SelectKBest</strong> couplé au score
-                  <strong>Mutual Information Classification</strong>, retenant
-                  les 15 features les plus informatives : radius_mean,
-                  perimeter_mean, area_mean, concavity_mean, concave
-                  points_mean, ainsi que leurs équivalents en erreur standard et
-                  pire valeur. Deux classifieurs ont été entraînés et comparés :
-                  une <strong>Régression Logistique</strong> (L2, liblinear,
-                  class_weight balanced) et un
-                  <strong>Random Forest</strong> (200 arbres, max_depth=50). La
-                  courbe ROC révèle un <strong>AUC = 1,0</strong> pour la
-                  régression logistique et <strong>AUC = 0,994</strong>
-                  pour le Random Forest — des performances de niveau production.
+                  Objectif : prédire si une tumeur est <strong>bénigne</strong> ou <strong>maligne</strong>
+                  sur le dataset <em>UCI Breast Cancer Wisconsin</em> (569 patientes, 30 mesures morphologiques).
+                  Après nettoyage, détection d’outliers (IQR) et normalisation, les 15 variables les plus
+                  informatives ont été retenues via Mutual Information.
                 </p>
                 <p class="mb-0">
-                  Les hyperparamètres ont ensuite été optimisés par
-                  <strong>GridSearchCV</strong> sur une grille couvrant C,
-                  penalty, solver et max_iter. La robustesse du modèle final a
-                  été confirmée par une
-                  <strong>validation croisée StratifiedKFold à 5 folds</strong>
-                  (recall moyen : 93,2 % ± 3,1 %), garantissant des performances
-                  stables et non biaisées par un seul split. Le modèle final est
-                  sauvegardé avec joblib et opérationnel pour prédire le
-                  diagnostic d'un nouveau patient à partir de ses données
-                  morphologiques brutes.
+                  Une régression logistique et une Random Forest ont été comparées, avec un
+                  <strong>ROC AUC = 1</strong> pour la régression logistique. Les hyperparamètres ont été
+                  ajustés avec GridSearchCV et validés par StratifiedKFold, puis le modèle final a été
+                  sauvegardé pour prédire le diagnostic d’un nouveau cas à partir de ses mesures.
                 </p>
               </div>
             </div>

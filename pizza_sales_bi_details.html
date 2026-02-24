@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Pizza Sales – Dashboard Excel & SQL | Projet BI de Sam TOAFODE</title>
+    <meta
+      name="description"
+      content="Projet Business Intelligence de Sam TOAFODE : analyse complète des performances commerciales d'une pizzeria via un dashboard Excel et SQL. 817 860 € de CA, segmentation produit, analyse horaire des ventes, top & flop performers et recommandations stratégiques actionnables."
+    />
+    <meta
+      name="keywords"
+      content="dashboard Excel, pizza sales dashboard, SQL analyse ventes, business intelligence, KPIs commerciaux, analyse temporelle, segmentation produit, best sellers, worst sellers, chiffre d'affaires, Sam TOAFODE, portfolio BI, data analytics, storytelling données"
+    />
+    <meta name="author" content="Sam TOAFODE" />
+
+    <link rel="canonical" href="https://sam-toafode.wuaze.com/pizza_sales_details.html" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon-32x32.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png" />
+    <link rel="manifest" href="assets/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Pizza Sales – Dashboard Excel & SQL | Sam TOAFODE" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sam-toafode.wuaze.com/pizza_sales_details.html" />
+    <meta property="og:image" content="assets/img/portfolio/pizza_sales_dashboard.png" />
+    <meta property="og:image:alt" content="Pizza Sales Dashboard Excel – Analyse commerciale et KPIs" />
+    <meta property="og:description" content="Dashboard BI Excel & SQL : 817 860 € de CA, 21 350 commandes, segmentation produit par catégorie et taille, analyse horaire et recommandations stratégiques." />
+    <meta property="og:site_name" content="Portfolio de Sam TOAFODE" />
+    <meta property="og:locale" content="fr_FR" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Pizza Sales – Dashboard Excel & SQL | Sam TOAFODE" />
+    <meta name="twitter:description" content="Analyse BI d'une pizzeria : 817 860 € CA, top/flop produits, pics horaires. Dashboard Excel + SQL par Sam TOAFODE." />
+    <meta name="twitter:image" content="assets/img/portfolio/pizza_sales_dashboard.png" />
+    <meta name="twitter:site" content="@samToafode" />
+    <meta name="twitter:creator" content="@samToafode" />
+
+    <!-- Meta Robots -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="slurp" content="index, follow" />
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CreativeWork",
+        "@id": "https://sam-toafode.wuaze.com/pizza_sales_details.html#project",
+        "name": "Pizza Sales – Dashboard Excel & SQL",
+        "url": "https://sam-toafode.wuaze.com/pizza_sales_details.html",
+        "image": ["https://sam-toafode.wuaze.com/assets/img/portfolio/pizza_sales_dashboard.png"],
+        "description": "Dashboard analytique complet développé sous Excel et SQL pour analyser les performances commerciales d'une pizzeria. Comprend l'analyse du chiffre d'affaires (817 860 €), la segmentation produit par catégorie et taille, l'identification des top & flop sellers, l'analyse temporelle des ventes et des recommandations stratégiques actionnables.",
+        "dateCreated": "2025-03-01",
+        "datePublished": "2025-03-01",
+        "inLanguage": "fr-FR",
+        "keywords": "dashboard Excel, SQL, business intelligence, analyse ventes, KPIs, segmentation produit, analyse temporelle, Sam TOAFODE",
+        "about": { "@type": "Thing", "name": "Business Intelligence & Data Analytics", "description": "Analyse des performances commerciales d'une pizzeria via Excel et SQL" },
+        "creator": {
+          "@type": "Person",
+          "@id": "https://sam-toafode.wuaze.com/#person",
+          "name": "Sam TOAFODE",
+          "url": "https://sam-toafode.wuaze.com"
+        },
+        "applicationCategory": "Business Intelligence / Data Analytics",
+        "isPartOf": {
+          "@type": "CollectionPage",
+          "name": "Portfolio Data & IA",
+          "url": "https://sam-toafode.wuaze.com/portfolio.html"
+        }
+      }
+    </script>
+
+    <!-- Preload -->
+    <link rel="preload" href="assets/vendor/bootstrap/css/bootstrap.min.css" as="style" />
+    <link rel="preload" href="assets/css/main.css" as="style" />
+    <link rel="preload" href="assets/vendor/bootstrap-icons/bootstrap-icons.css" as="style" />
+    <link rel="preload" href="assets/js/main.js" as="script" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Vendor CSS -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="assets/css/main.css" rel="stylesheet" />
+  </head>
+
+  <body class="portfolio-details-page">
+    <header id="header" class="header d-flex align-items-center fixed-top">
+      <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center" aria-label="Retour à l'accueil">
+          <img src="assets/img/logo.jpeg" alt="Logo Sam TOAFODE - Data Science & IA" loading="eager" decoding="async" />
+          <h1 class="sitename">Personal</h1>
+        </a>
+        <nav id="navmenu" class="navmenu" aria-label="Menu principal">
+          <ul itemscope itemtype="https://schema.org/SiteNavigationElement">
+            <li itemprop="name"><a href="index.html" itemprop="url">Accueil</a></li>
+            <li itemprop="name"><a href="about.html" itemprop="url">Profil</a></li>
+            <li itemprop="name"><a href="resume.html" itemprop="url">Parcours</a></li>
+            <li itemprop="name"><a href="portfolio.html" class="active" aria-current="page" itemprop="url">Projets</a></li>
+            <li itemprop="name"><a href="contact.html" itemprop="url">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list" aria-label="Menu mobile"></i>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- Page Title -->
+      <div class="page-title" data-aos="fade">
+        <div class="heading">
+          <div class="container">
+            <div class="row d-flex justify-content-center text-center">
+              <div class="col-lg-8">
+                <h1>Détails du Projet</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav class="breadcrumbs">
+          <div class="container">
+            <ol>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="portfolio.html">Projets</a></li>
+              <li class="current">Pizza Sales – Dashboard BI</li>
+            </ol>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Portfolio Details Section -->
+      <section id="portfolio-details" class="portfolio-details section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4">
+
+            <!-- Swiper -->
+            <div class="col-lg-8">
+              <div class="portfolio-details-slider swiper init-swiper">
+                <script type="application/json" class="swiper-config">
+                  { "loop": true, "speed": 600, "autoplay": { "delay": 5000 }, "slidesPerView": "auto", "pagination": { "el": ".swiper-pagination", "type": "bullets", "clickable": true } }
+                </script>
+                <div class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/pizza_sales_dashboard.png" alt="Vue générale – KPIs chiffre d'affaires et commandes Pizza Sales" />
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-lg-4">
+              <div class="card-elevated p-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="eyebrow mb-2">Vue d'ensemble</div>
+                <h3 class="h5 mb-3">Informations du Projet</h3>
+                <ul class="mb-0">
+                  <li><strong>Catégorie</strong> : Business Intelligence</li>
+                  <li><strong>Secteur</strong> : Restauration / Commerce</li>
+                  <li><strong>Volume</strong> : 21 350 commandes analysées</li>
+                  <li><strong>Période</strong> : Données annuelles</li>
+                  <li><strong>Client</strong> : Projet personnel</li>
+                  <li><strong>Date</strong> : 2026</li>
+                </ul>
+              </div>
+
+              <div class="card-elevated p-4" data-aos="fade-up" data-aos-delay="250">
+                <div class="eyebrow mb-2">Compétences mobilisées</div>
+                <h3 class="h5 mb-3">Ce que j'ai développé</h3>
+                <p class="text-soft mb-3">
+                  Projet BI qui part de ventes brutes pour construire un dashboard Excel + SQL
+                  lisible par la direction.
+                </p>
+                <ul class="mb-3">
+                  <li>Extraction et agrégation des données avec SQL</li>
+                  <li>Définition de KPIs (CA, commandes, panier moyen)</li>
+                  <li>Analyse temporelle et segmentation produit (catégorie, format)</li>
+                </ul>
+                <div class="hero-tech-chips">
+                  <span class="chip">Excel</span>
+                  <span class="chip">SQL</span>
+                  <span class="chip">Data Viz</span>
+                  <span class="chip">Analyse BI</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Description complète -->
+          <div class="row mt-4">
+            <div class="col-lg-12">
+              <div class="card-elevated p-4" data-aos="fade-up" data-aos-delay="300">
+                <h2 class="h4 mb-3">Pizza Sales – Analyse Business Intelligence</h2>
+                <p class="mb-3">
+                  Le dashboard analyse une année de ventes : <strong>817 860 €</strong> de chiffre d’affaires,
+                  <strong>21 350 commandes</strong>, panier moyen à 38,31 € et pics d’activité le vendredi,
+                  surtout entre <strong>12h–13h</strong> et <strong>17h–18h</strong>.
+                </p>
+                <p class="mb-0">
+                  La catégorie <strong>Classic</strong> et le format <strong>Large</strong> dominent les ventes,
+                  tandis que quelques recettes restent très peu vendues. Ces constats servent de base à des actions
+                  simples : renforcer les équipes sur les créneaux forts, pousser les catégories stratégiques
+                  et repenser les pires vendeurs.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Métriques clés -->
+          <div class="row mt-4" data-aos="fade-up" data-aos-delay="350">
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card-elevated p-4 text-center h-100">
+                <div class="eyebrow mb-2">Chiffre d'affaires</div>
+                <div class="display-6 fw-bold mb-1">817 K€</div>
+                <p class="text-soft mb-0">revenu total sur la période analysée</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card-elevated p-4 text-center h-100">
+                <div class="eyebrow mb-2">Commandes</div>
+                <div class="display-6 fw-bold mb-1">21 350</div>
+                <p class="text-soft mb-0">transactions · panier moyen 38,31 €</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card-elevated p-4 text-center h-100">
+                <div class="eyebrow mb-2">Pic hebdomadaire</div>
+                <div class="display-6 fw-bold mb-1">Vendredi</div>
+                <p class="text-soft mb-0">3 538 commandes · pic à 12h–13h</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card-elevated p-4 text-center h-100">
+                <div class="eyebrow mb-2">Format leader</div>
+                <div class="display-6 fw-bold mb-1">Large · 46%</div>
+                <p class="text-soft mb-0">format préféré · Classic en tête des catégories</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tableau top/flop -->
+          <div class="row mt-2" data-aos="fade-up" data-aos-delay="400">
+            <div class="col-lg-6 mb-4">
+              <div class="card-elevated p-4 h-100">
+                <div class="eyebrow mb-3">⭐ Top 5 Best Sellers</div>
+                <table class="table table-sm mb-0">
+                  <thead><tr><th>Pizza</th><th class="text-end">Ventes</th></tr></thead>
+                  <tbody>
+                    <tr><td>The Classic Deluxe Pizza</td><td class="text-end fw-bold">2 453</td></tr>
+                    <tr><td>The Barbecue Chicken Pizza</td><td class="text-end fw-bold">2 432</td></tr>
+                    <tr><td>The Hawaiian Pizza</td><td class="text-end fw-bold">2 422</td></tr>
+                    <tr><td>The Pepperoni Pizza</td><td class="text-end fw-bold">2 418</td></tr>
+                    <tr><td>The Thai Chicken Pizza</td><td class="text-end fw-bold">2 371</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+              <div class="card-elevated p-4 h-100">
+                <div class="eyebrow mb-3">⚠️ Top 5 Worst Sellers</div>
+                <table class="table table-sm mb-0">
+                  <thead><tr><th>Pizza</th><th class="text-end">Ventes</th></tr></thead>
+                  <tbody>
+                    <tr><td>The Brie Carre Pizza</td><td class="text-end" style="color:#e74c3c; font-weight:600;">490</td></tr>
+                    <tr><td>The Mediterranean Pizza</td><td class="text-end" style="color:#e74c3c; font-weight:600;">934</td></tr>
+                    <tr><td>The Calabrese Pizza</td><td class="text-end" style="color:#e74c3c; font-weight:600;">937</td></tr>
+                    <tr><td>The Spinach Supreme Pizza</td><td class="text-end" style="color:#e74c3c; font-weight:600;">950</td></tr>
+                    <tr><td>The Soppressata Pizza</td><td class="text-end" style="color:#e74c3c; font-weight:600;">961</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Retour en haut"><i class="bi bi-arrow-up-short"></i></a>
+    <div id="preloader"></div>
+
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
